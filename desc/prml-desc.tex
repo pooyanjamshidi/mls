@@ -1,0 +1,192 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,headheight=3ex,headsep=3ex]{geometry}
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+\title{CSCE 790 - Production Machine Learning Systems}
+\author{Pooyan Jamshidi}
+\date{Fall 2018}
+
+\usepackage[sc]{mathpazo}
+\linespread{1.05}         % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+
+
+
+\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}   
+\lhead{}
+\chead{}
+\rhead{\footnotesize Production Machine Learning Systems  -- Fall 2018}
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array,xcolor}
+\usepackage{color,hyperref}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=clemsonorange,urlcolor=blue,
+            anchorcolor=clemsonorange,citecolor=black}
+
+
+
+
+\begin{document}
+
+
+\maketitle
+
+\blankline
+
+\begin{tabular*}{.93\textwidth}{@{\extracolsep{\fill}}lr}
+
+
+  E-mail: \texttt{pjamshid@cse.sc.edu} & Web: \href{https://pooyanjamshidi.github.io/teaching/}{\tt\bf https://pooyanjamshidi.github.io/teaching/}  \\
+
+ Office Hours: TBD  &  Class Hours: TR 2:50pm-4:05pm \\
+
+
+ Office: TBD & Class Room: TBD \\
+&  \\
+\hline
+\end{tabular*}
+
+\vspace{10mm}
+
+\section*{Course Description}
+
+When we talk about Machine Learning (ML), we typically refer to a technique or an algorithm that give the computer systems the ability to learn and to reason with data. However, there is a lot more to ML than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between ML as a technique versus ML as a system in production. A production-ready ML system involves a significant number of components and it is important that they remain responsive in the face of failure and changes in load. This course covers several strategies to keep ML systems responsive, resilient, and elastic. Machine learning systems are different than other computer systems when it comes to testing, building, deploying, and monitoring. ML systems also have unique challenges when we need to change the architecture or behavior of the system. Therefore, it is essential to learn how to deal with such unique challenges that only may happen when building real-world production-ready ML systems (e.g., performance issues, memory leaking, communication issues, multi-GPU issues, etc). The focus of this course would be primarily on \textbf{deep learning systems}, but the principles will remain similar across all ML systems. 
+
+
+
+
+\section*{Learning Outcomes}
+\begin{enumerate}
+\item Understanding differences between ML as predictive technique and as a computer system.
+
+\item Understand how a distributed ML system works in production and insight into challenges involved in building such systems.
+
+\item Understanding technical debt in building ML systems.
+
+\item Understand how to use design strategies and best practices to mitigate technical debt in production ML systems.
+
+\item Understand how to incorporate ML-based components into a larger system.
+
+% \item Understand how to build a system that can put the power of machine learning to use.
+
+\item Understand the principles that govern ML systems.
+
+\item Ability to build systems that are more capable, both as software and as predictive systems.
+
+\item Understand systems issues in ML systems and how to avoid them in building production ML system.
+
+\end{enumerate}
+
+
+\section*{Course Syllabi}
+
+In this course, we will understand central principles of \textbf{production machine learning systems}. We will begin by reviewing common challenges and technical debt that may incur massive ongoing maintenance costs in real-world ML systems. We explore several ML-specific risk factors to account for in system design. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, configuration issues, changes in the external world, and a variety of system-level anti-patterns. We will review many different examples of real-world ML systems and the unique challenges one may encounter to integrate a research ML technique into a production-ready system. We will review unique challenges relevant to each component of an ML system from data collection, feature generation, model learning, model evaluation, model publishing, and acting on the real-world. 
+
+In this course, we will also study strategies and principles of distributed ML especially for handling big data in modern production systems. We will learn how to build distributed Deep Learning systems using computer systems best practices. We will study design solutions in ML systems to make them as reliable as a production-ready software system. We will also review design patterns to implement and coordinate ML subsystems. Using powerful frameworks such as Spark, MLlib, Clipper, and Akka, you will learn how to quickly and reliably move from a single machine to a massive cluster. We will then proceed how one can operate a large-scale ML system over time. We will employ the computer systems principles to build ML applications that are responsive, resilient, and elastic. In this course, students will gain hands-on experience applying systems principles to implement scalable learning pipelines. We will also cover various aspects of learning systems, including: automatic differentiation, distributed learning, and scalable model serving. We will finally review best practices of ML at scale in companies such as Uber, Spotify, Netflix. 
+
+
+\section*{Course Projects and Homeworks}
+
+For the course projects/homeworks, students will work on some aspects of distributed ML systems. The details of the projects will become available, but they will be mainly around identifying systems issues in open-source ML systems by looking into GitHub repositories and providing solutions for fixing the issues, building a new model serving system, contributing for a new feature for the following frameworks and engines (essentially something cool either an empirical study or developing a feature):
+\begin{enumerate}
+\item Front-end (Keras, Caffe2), backend engines (Tensorflow, PyTorch, Theano, CNTK, MXNet), and Interoperability tools (Apache ONNX).
+\item Modern data architecture patterns for handling big data in ML systems (MapReduce).
+\item Configuration and Resource Management, distributed ML engines (Apache Spark), Model Serving Infrastructure (TF serving, Clipper).
+\end{enumerate}
+
+If you develop a new feature and submit a pool request to the repositories and that pull request get accepted, your ``A'' will be guaranteed!
+
+
+\section*{Required Readings}
+
+\begin{itemize}
+\item Jeff Smith, Reactive Machine Learning Systems, MEAP, 2018.
+\item \href{https://gluon.mxnet.io/}{Deep Learning - The Straight Dope} contains useful tutorials and code.
+\item Ian Goodfellow, Yoshua Bengio, and Aaron Courville, \href{http://www.deeplearningbook.org/}{Deep Learning Book}, MIT Press, 2016.
+\end{itemize} 
+
+
+\section*{Course Policy}
+
+I will detail the policy for this course below. Basically, don't cheat and try to learn stuff.
+
+\subsection*{Grading Policy}
+\begin{itemize}
+  \item \underline{\textbf{10\%}} of your grade will be determined by your attendance and participation in class. Generally, ask questions and answer them.
+
+  \item \underline{\textbf{60\%}} of your grade will be determined by the course project(s). 
+
+  \item \underline{\textbf{30\%}} of your grade will be determined by coursework throughout the semester.
+
+\end{itemize}
+
+\subsection*{Academic Dishonesty Policy}
+
+Don't cheat. Don't be that guy. I'd encourage you to discuss or brainstorm with other students or professors, but be aware if you copy/paste from other students/Internet, you will simply fail in this course. 
+
+\subsection*{Disabilities Policy}
+
+Any student who has a need for accommodation based on the impact of
+a documented disability, please contact the Office of Student Disability Services: Phone: 803-777-6142, Email: \textit{sasds@mailbox.sc.edu}, Address: 1523 Greene Street, LeConte College Room 112A, Web: \url{https://www.sc.edu/about/offices_and_divisions/student_disability_resource_center/index.php}.
+
+% \newpage
+
+% \SetDate[10/08/2015]
+% \week{Week 01} Introduction
+% \week{Week 02} Some Topic
+
+
+% \week{Week 03} Some Other Topic with More Reading
+
+% \begin{itemize}
+% \item Read this too
+% \item And also this
+% \end{itemize}
+
+% \week{Week 04} Keep
+% \week{Week 05} Going
+% \week{Week 06} Down
+% \week{Week 07} the
+% \week{Week 08} Line
+% \week{Week 09} until
+% \week{Week 10} You
+% \week{Week 11} Are
+% \week{Week 12} Done
+% \week{Week 13} with
+% \week{Week 14} Your
+% \week{Week 15} Syllabus
+
+
+
+\end{document}
