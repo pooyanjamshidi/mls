@@ -4,7 +4,7 @@
 
 \newcommand{\blankline}{\quad\pagebreak[2]}
 
-\title{CSCE 790 - Production Machine Learning Systems}
+\title{CSCE 790 - Machine Learning Systems}
 \author{Pooyan Jamshidi}
 \date{Fall 2018}
 
@@ -43,7 +43,7 @@
 \usepackage{layout}   
 \lhead{}
 \chead{}
-\rhead{\footnotesize Production Machine Learning Systems  -- Fall 2018}
+\rhead{\footnotesize Machine Learning Systems  -- Fall 2018}
 \lfoot{}
 \cfoot{\small \thepage/\pageref*{LastPage}}
 \rfoot{}
@@ -82,7 +82,7 @@
 
 \section*{Course Description}
 
-When we talk about Machine Learning (ML), we typically refer to a technique or an algorithm that give the computer systems the ability to learn and to reason with data. However, there is a lot more to ML than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between ML as a technique versus ML as a system in production. A production-ready ML system involves a significant number of components and it is important that they remain responsive in the face of failure and changes in load. This course covers several strategies to keep ML systems responsive, resilient, and elastic. Machine learning systems are different than other computer systems when it comes to testing, building, deploying, and monitoring. ML systems also have unique challenges when we need to change the architecture or behavior of the system. Therefore, it is essential to learn how to deal with such unique challenges that only may happen when building real-world production-ready ML systems (e.g., performance issues, memory leaking, communication issues, multi-GPU issues, etc). The focus of this course would be primarily on \textbf{deep learning systems}, but the principles will remain similar across all ML systems. 
+When we talk about Machine Learning (ML), we typically refer to a technique or an algorithm that gives the computer systems the ability to learn and to reason with data. However, there is a lot more to ML than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between ML as a technique versus ML as a system in production. A machine learning system involves a significant number of components and it is important that they remain responsive in the face of failure and changes in load. This course covers several strategies to keep ML systems responsive, resilient, and elastic. Machine learning systems are different than other computer systems when it comes to building, testing, deploying, delivering, and evolving. ML systems also have unique challenges when we need to change the architecture or behavior of the system. Therefore, it is essential to learn how to deal with such unique challenges that only may happen when building real-world production-ready ML systems (e.g., performance issues, memory leaking, communication issues, multi-GPU issues, etc). The focus of this course will be primarily on \textbf{deep learning systems}, but the principles will remain similar across all ML systems. 
 
 
 
@@ -112,7 +112,7 @@ When we talk about Machine Learning (ML), we typically refer to a technique or a
 
 \section*{Course Syllabi}
 
-In this course, we will understand central principles of \textbf{production machine learning systems}. We will begin by reviewing common challenges and technical debt that may incur massive ongoing maintenance costs in real-world ML systems. We explore several ML-specific risk factors to account for in system design. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, configuration issues, changes in the external world, and a variety of system-level anti-patterns. We will review many different examples of real-world ML systems and the unique challenges one may encounter to integrate a research ML technique into a production-ready system. We will review unique challenges relevant to each component of an ML system from data collection, feature generation, model learning, model evaluation, model publishing, and acting on the real-world. 
+In this course, we will understand central principles of \textbf{machine learning systems}. We will begin by reviewing common challenges and technical debt that may incur massive ongoing maintenance costs in real-world ML systems. We explore several ML-specific risk factors to account for in system design. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, configuration issues, changes in the external world, and a variety of system-level anti-patterns. We will review many different examples of real-world ML systems and the unique challenges one may encounter to integrate a research ML technique into a production-ready system. We will review unique challenges relevant to each component of an ML system from data collection, feature generation, model learning, model evaluation, model publishing, and acting on the real-world. 
 
 In this course, we will also study strategies and principles of distributed ML especially for handling big data in modern production systems. We will learn how to build distributed Deep Learning systems using computer systems best practices. We will study design solutions in ML systems to make them as reliable as a production-ready software system. We will also review design patterns to implement and coordinate ML subsystems. Using powerful frameworks such as Spark, MLlib, Clipper, and Akka, you will learn how to quickly and reliably move from a single machine to a massive cluster. We will then proceed how one can operate a large-scale ML system over time. We will employ the computer systems principles to build ML applications that are responsive, resilient, and elastic. In this course, students will gain hands-on experience applying systems principles to implement scalable learning pipelines. We will also cover various aspects of learning systems, including: automatic differentiation, distributed learning, and scalable model serving. We will finally review best practices of ML at scale in Uber, Spotify, Netflix. 
 
@@ -126,12 +126,10 @@ For the course projects/homeworks, students will work on some aspects of distrib
 \item Configuration and Resource Management, distributed ML engines (Apache Spark), Model Serving Infrastructure (TF serving, Clipper).
 \end{enumerate}
 
-If you develop a new feature and submit a pool request to the repositories and that pull request get accepted, your ``A'' will be guaranteed! See the grading policies for the weights.
-
 
 \section*{Prerequisites}
 
-Familiarity with Python and C/C++: we will mainly be using python for the course projects, and C/C++ may be handy for some of the background hacking.
+Familiarity with Python or C/C++: we will mainly be using python for the course projects, and C/C++ may be handy for some of the background hacking.
 
 
 \section*{Required Readings}
@@ -155,9 +153,10 @@ I will detail the policy for this course below. Basically, don't cheat and try t
 
   \item \underline{\textbf{30\%}} of your grade will be determined by coursework throughout the semester.
 
-The final exam (where you demo your project) will be Tuesday, December 11, at 4:00pm in SWGN 2A24.
-
 \end{itemize}
+
+If you develop a new feature and submit a pool request to the repositories and that pull request get accepted, your ``A'' will be guaranteed. The final exam (where you demo your project) will be Tuesday, December 11, at 4:00pm in SWGN 2A24.
+
 
 \subsection*{Academic Integrity}
 
@@ -169,23 +168,23 @@ Any student who has a need for accommodation based on the impact of
 a documented disability, please contact the Office of Student Disability Services: Phone: 803-777-6142, Email: \textit{sasds@mailbox.sc.edu}, Address: 1523 Greene Street, LeConte College Room 112A, Web: \url{https://www.sc.edu/about/offices_and_divisions/student_disability_resource_center/index.php}.
 
 \newpage
-\section*{Schedule}
+\section*{Course Schedule}
 
 \SetDate[27/08/2018]
-\week{Week 01} Introduction to production ML systems
-\week{Week 02} Case study 1 (Uber 1)
-\week{Week 03} Distributed ML
-\week{Week 04} Interoperability between ML engines/models
+\week{Week 01} Introduction to ML systems
+\week{Week 02} Case study 1 (Uber)
+\week{Week 03} Technical debt in ML systems
+\week{Week 04} Performance issues in ML systems
 \week{Week 05} Case study 2 (Spotify)
-\week{Week 06} Technical debt in ML
-\week{Week 07} Systems/Performance issues in ML
+\week{Week 06} Distributed ML systems
+\week{Week 07} Interoperability between ML systems
 \week{Week 08} Case study 3 (Netflix)
-\week{Week 09} Scalability
-\week{Week 10} Automatic differentiation
-\week{Week 11} Data architecture patterns
-\week{Week 12} Project demo
-\week{Week 13} Model serving
-\week{Week 14} Case study 4 (Uber 2)
+\week{Week 09} Differentiable neural architectures
+\week{Week 10} Data architecture patterns
+\week{Week 11} Computing architecture for ML systems
+\week{Week 12} Scalable ML systems
+\week{Week 13} Deploy models to production
+\week{Week 14} Evolving ML systems (Evolving deep neural architectures)
 \week{Week 15} Showcase final projects
 
 
