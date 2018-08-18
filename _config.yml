@@ -30,6 +30,4 @@ include: ['_images', '_css']
 # SEO stuff
 # google_author: ""
 # google_site_verification: ""
-# bing_webmastertools_id: ""
-
-theme: jekyll-theme-cayman
+# bing_webmastertools_id: "
