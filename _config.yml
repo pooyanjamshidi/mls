@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://pooyanjamshidi.github.io/mls/" # the base hostname & protocol for your site
 twitter_username: pooyanjamshidi
 github_username: pooyanjamshidi
-leadimage: mls-logo.pdf
+leadimage: mls-logo.jpg
 leadimage_description: "New to machine learning? Not sure how ML works in production? You're welcome to follow and learn from this graduate-level course."
 authorurl: "https://pooyanjamshidi.github.io"
 syllabus: "https://github.com/pooyanjamshidi/mls/blob/master/desc/mls.pdf"
