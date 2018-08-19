@@ -2,8 +2,8 @@
   filename: mls01
   dirname: lectures
   tldr: "This lecture reviews challenges of building a real-world ML system that scales."
+
 - title: "ML System Architecture"
   filename: mls02
   dirname: lectures
   tldr: "This lecture introduces how to incorporate ML-based components into a larger system."
-"
