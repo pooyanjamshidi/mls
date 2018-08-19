@@ -1,9 +1,9 @@
-- title: "Course Introduction"
+- title: "Lecture 1 (August 23): Course Introduction"
   filename: mls01
   dirname: lectures
   tldr: "This lecture reviews challenges of building a real-world ML system that scales."
 
-- title: "ML System Architecture"
+- title: "Lecture 2 (August 28): ML System Architecture"
   filename: mls02
   dirname: lectures
   tldr: "This lecture introduces how to incorporate ML-based components into a larger system."
