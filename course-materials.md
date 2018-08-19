@@ -4,11 +4,11 @@ title: Course Materials
 permalink: /course-materials/
 ---
 
-{% include image.html url="/_images/fabulous-sylvester.jpg" caption="The Textbook for the Semester" width=300 align="right" %}
+{% include image.html url="/_images/friedenetal2016.jpg" caption="The Textbook for the Semester" width=300 align="right" %}
 
 ## Book
 
-Garrison, Joshua. 2006. [The Fabulous Sylvester: The Legend, the Music, the Seventies in San Francisco](https://www.amazon.com/Fabulous-Sylvester-Legend-Seventies-Francisco/dp/0312425694/). Picador.
+Frieden, Jeffry A, David A. Lake and Kenneth A. Schultz (2016). [*World Politics: Interests, Interactions, Institutions*](https://www.amazon.com/World-Politics-Interests-Interactions-Institutions/dp/0393938093). 3rd Edition. New York, NY: W.W. Norton and Company.
 
 ## Additional Course Materials
 

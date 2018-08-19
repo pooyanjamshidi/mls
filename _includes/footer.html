@@ -17,7 +17,9 @@
  
 
          <p class="text">
-{{ site.address | newline_to_br  }}
+		Department of Political Science<br />
+		232 Brackett Hall<br />
+		Clemson, SC 29634-1354</p> <!-- {{ site.description }} -->
       </div>
 
       <div class="footer-col  footer-col-3">
@@ -26,8 +28,8 @@
 
           {% if site.github_username %}
   <li>
-    <a href="https://github.com/{{ site.githubdir }}">
-      <i class="fab fa-github" style="color:gray"></i> {{ site.githubdir }}
+    <a href="https://github.com/{{ site.github_username }}">
+      <i class="fab fa-github" style="color:gray"></i> {{ site.github_username }}
     </a>
   </li>
 {% endif %}
@@ -59,7 +61,7 @@
           {% if site.authorurl %}
   <li>
     <a href="{{site.authorurl}}">
-      <i class="fas fa-globe" style="color:gray"></i> {{site.authorurl |  remove: "https://" | remove: "http://" | remove: "www." }}
+      <i class="fas fa-globe" style="color:gray"></i> {{site.authorurl  | remove: "https://" | remove: "http://" | remove: "www."}}
     </a>
   </li>
 {% endif %}

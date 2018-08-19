@@ -1,0 +1,503 @@
+---
+title: "Syllabus Day (i.e. Welcome)"
+subtitle: POSC 1020  -- Introduction to International Relations
+author: Steven V. Miller
+institute: Department of Political Science
+titlegraphic: /Dropbox/teaching/clemson-academic.png
+date: 
+output:
+ beamer_presentation:
+    template: ~/Dropbox/miscelanea/svm-r-markdown-templates/svm-latex-beamer.tex
+    latex_engine: xelatex
+    dev: cairo_pdf
+    fig_caption: true
+    slide_level: 3
+make149: true
+mainfont: "Open Sans"
+titlefont: "Titillium Web"
+---
+
+```{r setup, include=FALSE, cache=F, message=F, warning=F, results="hide"}
+knitr::opts_chunk$set(cache=TRUE)
+knitr::opts_chunk$set(fig.path='figs/')
+knitr::opts_chunk$set(cache.path='cache/')
+
+knitr::opts_chunk$set(
+                  fig.process = function(x) {
+                      x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
+                      if (file.rename(x, x2)) x2 else x
+                      }
+                  )
+```
+
+```{r loadstuff, include=FALSE}
+mon <- as.Date("2018-08-20")
+lastday <- as.Date("2018-12-07")
+finalexam <- as.Date("2018-12-12") # 8 a.m.
+# fri <- as.Date("2016-01-08")
+
+advdate <- function(obj, adv) {
+ tmon <- obj + 7*(adv-1)
+ tfri <- obj + 4 + 7*(adv-1)
+ tmon <- format(tmon, format="%m/%d")
+ tfri <- format(tfri, format="%m/%d")
+ zadv <- sprintf("%02d", adv)
+ tmp <- paste("Week ",zadv,sep='',", ", tmon," - ",tfri)
+ return(tmp)
+}
+
+library(RefManageR)
+library(stevemisc)
+# library(knitcitations)
+# library(rcrossref)
+bib <- ReadBib("~/Dropbox/master.bib")
+myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 20)
+
+library(fredr)
+# My fred API key is set globally.
+library(tidyverse)
+
+```
+
+# Introduction
+### Goal for Today
+
+Familiarize students with the topic of the course and the instructor's expectations.
+
+### New to International Relations? Not Sure How Things Work?
+
+![You're Not Alone](trump-tillerson-haley.jpg)
+
+I'll try to help.
+
+# Structure of This Course
+### Structure of This Course
+
+- Intro/framework/method
+    - Actor's interests, interactions, and institutions
+    - Preliminary game theory, understanding of stats.
+- War as bargaining, and its causes
+    - Included: civil war and terrorism
+- International economics
+    - i.e. learn these lessons as we get set to relearn history's mistakes in the West.
+    - Included: trade, monetary relations, and inequality
+- The problems of the future: international law, human rights, and global warming
+
+We'll give careful attention to the issue of inference too.
+
+### Structure of This Course
+
+- Also: expect a lot of data and data visualization. 
+
+- I *love* playing with data and want you to better understand the world around you.
+- Visualization with current (as possible) data may help your learning experience.
+
+###
+
+```{r perc-states-mid-war-1816-2010, eval=T, echo=F, fig.height=8.5, fig.width = 14, message=F, warning=F}
+States <- read_csv("~/Dropbox/data/cow/states/states2016.csv")
+DDY <- read_csv("~/Dropbox/projects/mid-project/gml-mid-data/2.03/gml-ddy-disputes-2.03.csv")
+
+States %>%
+  rowwise() %>%
+  mutate(year = list(seq(styear, endyear))) %>%
+  ungroup() %>%
+  unnest() %>%
+  arrange(ccode, year) %>%
+  select(ccode, year) %>%
+  distinct(ccode, year) -> CYs
+CYs %>%
+  group_by(year) %>%
+  summarize(numstates = n()) -> Numstates
+
+DDY %>%
+  filter(hostlev == 5) %>%
+  distinct(ccode1, year, .keep_all=TRUE) %>%
+  group_by(year) %>%
+  summarize(numstateswars = n()) -> Numstateswars
+
+DDY %>%
+  #    mutate(war = ifelse(hostlev == 5, "War", )) %>%
+  distinct(ccode1, year, .keep_all=TRUE) %>%
+  group_by(year) %>%
+  summarize(numstatesmids = n()) %>%
+  left_join(., Numstateswars) %>%
+  left_join(Numstates, .) %>%
+  mutate(numstateswars = ifelse(is.na(numstateswars), 0, numstateswars),
+         numstatesmids = ifelse(is.na(numstatesmids), 0, numstatesmids),
+         percmids = mround2(numstatesmids/numstates),
+         percwars = mround2(numstateswars/numstates)) %>%
+  filter(year < 2011) %>%
+  ggplot(.,aes(year, percmids)) + theme_steve_web() +
+  geom_ribbon(aes(ymin=0, ymax=percmids),
+              alpha=0.6, fill="#F8766D") +
+  geom_line(aes(y=percmids), color = "#F8766D", size = 1) +
+  geom_ribbon(aes(ymin=0, ymax=percwars),
+              alpha=0.6, fill="#00BFC4") +
+  # geom_line(aes(y=percwars), color = "#00BFC4",  size = 1) +
+  xlab("Year") + ylab("Percentage of the State System") +
+  scale_x_continuous(breaks = seq(1820, 2010, by = 10)) +
+  scale_y_continuous(breaks = seq(0, 70, by = 10)) +
+  labs(title = "The Percentage of States Involved in a MID and Inter-State War by Year, 1816-2010",
+       subtitle = "We observe clear spikes in the 1860s, 1910s, and 1940s, which were particularly violent decades.",
+       caption = "Data: GML MID data (v. 2.03) and Correlates of War State System Membership List.
+       Note: Red shaded areas are for MID involvement. Blue shaded areas are the subset of wars.")
+```
+
+###
+
+```{r protectionism-partisanship-anes-2012-2016, echo=F, eval=T, fig.width = 15, fig.height = 8.5, warning = F, message = F}
+ANES2012 <- haven::read_dta("~/Dropbox/data/anes/2012/anes_timeseries_2012_stata12.dta")
+ANES2016 <- haven::read_dta("~/Dropbox/data/anes/2016-ts/anes_timeseries_2016_Stata12.dta")
+
+ANES2012$limitimports <- with(ANES2012, car::recode(imports_limit, "-9:-2=NA; 1=1; 2=0")) 
+
+ANES2016 %>%
+  mutate(year = 2016,
+         pid7 = car::recode(V161158x, "-9:-2=NA"),
+         limitimportsa = car::recode(V162152a, "-9:-1=NA; 2=0"),
+         limitimportsb = car::recode(V162152b, "-9:-1=NA; 2=0; 99=NA")) %>%
+  select(year:limitimportsb) -> anes2016
+
+ANES2012 %>%
+  mutate(year = 2012,
+         pid7 = car::recode(pid_x, "-9:-1=NA"),
+         limitimportsa = NA,
+         limitimportsb = car::recode(imports_limit, "-9:-1=NA; 1=1; 2=0")) %>%
+  select(year:limitimportsb) -> anes2012
+
+rbind(anes2012, anes2016) %>%
+  filter(!is.na(pid7) & !is.na(limitimportsb)) %>%
+  mutate(pid = car::recode(pid7, "1:3 = 1; 4=2; 5:7=3")) %>%
+  group_by(year, limitimportsb, pid) %>%
+  summarize(sum = n()) %>%
+  group_by(year, pid) %>%
+  mutate(perc = round(sum/sum(sum), 2),
+         `Party ID` = as.factor(pid),
+         percper = paste0(perc*100,"%"),
+         limit = ifelse(limitimportsb == 0, "Oppose", "Favor")) %>%
+  ggplot(., aes(x=factor(limit), y=perc, fill = `Party ID`)) + 
+  theme_steve_web() +
+  geom_bar(stat="identity", position = "dodge", alpha = I(0.8),color = I("black")) +
+  facet_wrap(~ year, ncol=2, scales="free") +
+  scale_fill_manual(values=c("blue", "gray88", "red"),
+                    labels=c("Democrats/Lean Democrat", "Independents", "Republicans/Lean Republican")) +
+  scale_y_continuous(labels = scales::percent, limits=c(0,1)) +
+  geom_text(aes(label=percper), vjust=-.5, colour="black",
+            position=position_dodge(.9), size=4, family = "Open Sans") +
+ # geom_ribbon(aes(fill = `Party ID`), alpha = I(0.2), color = I("black")) +
+  theme(legend.position = "bottom") +
+  xlab("Favor or Oppose Limiting Foreign Imports") + ylab("Percent in Category") +
+  labs(title = "Protectionism is Still an Easy Sell, but We're Seeing a Partisan Shift on Limiting Imports to Protect Workers from Competition",
+       subtitle = "''Some people have suggested placing new limits on foreign imports in order to protect American jobs. Others say that such limits would raise consumer prices and hurt American exports.\nDo you FAVOR or OPPOSE placing new limits on imports, or haven't you thought much about this?''",
+       caption = "Data: American National Election Studies (2012, 2016)
+       Note: Most respondents don't know enough to respond to this question so attitudes are certainly malleable.")
+
+
+```
+
+###
+
+```{r exmus-1993-2018, echo=F, eval=T, fig.width = 14, fig.height = 8.5, warning = F, message = F}
+
+fredr_series(series_id = "EXMXUS",
+                      observation_start = "1993-01-01") %>% data.frame %>%
+  data.frame(Date = rownames(.), .) %>% 
+  mutate(Date = as.Date(Date)) %>% tbl_df() %>%
+  ggplot(.,aes(Date, EXMXUS)) + 
+    geom_line(size=1.1) + 
+    geom_ribbon(aes(ymin=-Inf, ymax=EXMXUS),
+              alpha=0.3, fill="#619CFF") +
+    theme_steve_web() +
+  scale_x_date(date_breaks = "2 years", date_minor_breaks = "1 year", date_labels = "%Y") +
+  xlab("Year") + ylab("The Number of Pesos Required to Obtain a Dollar") +
+  labs(caption = "Data: Board of Governors of the Federal Reserve System (US)",
+       title = "The Dollar Has Always Been Strong to the Mexican Peso",
+       subtitle = "Mexico dropped its previous peg (i.e. three new pesos to one USD) in 1995, which you can see in the first few years of the data.")
+
+```
+
+
+
+
+###
+
+
+
+```{r co2-emissions-800000bc-present, eval=T, echo=F, fig.height=8.5, fig.width = 14, message=F, warning=F}
+
+co2bc <- read_csv("~/Dropbox/data/co2/co2-alltime.csv")
+co2ad <- read_csv("~/Dropbox/data/co2/mole_fraction_of_carbon_dioxide_in_air_input4MIPs_GHGConcentrations_CMIP_UoM-CMIP-1-1-0_gr3-GMNHSH_0000-2014.csv") %>%
+  rename(co2 = data_mean_global)
+NASA <- readr::read_table("~/Dropbox/data/nasa/co2.txt") %>%
+  filter(year > 2014) %>%
+  group_by(year) %>%
+  summarize(co2 = mean(interp))
+
+co2bc %>%
+  filter(year < 0) %>%
+  rename(co2 = epica) %>%
+  select(year, co2) %>%
+  bind_rows(.,co2ad) %>%
+  bind_rows(.,NASA) %>%
+  ggplot(.,aes(year,co2)) + theme_steve_web() + 
+  geom_ribbon(aes(ymin=-Inf, ymax=co2),
+              alpha=0.3, fill="grey66") +
+  geom_line(size=1.1) +
+  geom_hline(yintercept = 300, linetype = "dashed") +
+  annotate("text", x=-796562,y=305, hjust=0, label="1912: mean carbon dioxide emissions pass 300ppm for the first time in the history of the planet.",
+           family = "Open Sans") +
+  geom_hline(yintercept = 400, linetype = "dashed") +
+  annotate("text", x=-796562,y=405, hjust=0, label="2015: mean carbon dioxide emissions pass 400ppm for the first time in the history of the planet.",
+           family = "Open Sans") +
+  scale_x_continuous(breaks=seq(-800000, 0, by= 50000)) +
+  xlab("Year (Negative Values = BC)") + ylab("Carbon Dixode Emissions (ppm)") +
+  labs(title = "Estimated Carbon Dioxide Emissions Through the History of the Planet, 800,000 BC to 2017",
+       subtitle = "What's happening right now is more than just a normal ''cycle.''",
+       caption = "Data: cobbled from various sources, including EPA, IAC/Eidgenössische Technische Hochschule estimates, and NOAA Earth System Research Laboratory") 
+```
+
+# POSC 1020 Syllabus
+### Course Objectives
+
+1. Gain a cursory knowledge of important topics in IR; prepare for upper-division courses with more focused applications in the field.
+
+2. Understand conflict as bargaining process and explain why bargaining "breaks down" (i.e. war onset).
+
+3. Learn that, despite popular commentary and outward appearances, terrorism is rational behavior and part of a bargaining process.
+
+4. Appreciate the benefits of globalization and free trade, notwithstanding the externalities these policies can create.
+
+5. Discuss current issues at the fore of international politics (e.g. human rights, global warming) and the problems we have trying to address these issues.
+
+### Books
+
+```{r textbook, echo = FALSE, results="asis"} 
+bib["friedenetal2016wp"]
+```
+
+
+## Course Policy
+### Grading Policy
+
+| **Assignment** | **(Due) Date** | **Percent of Grade** |
+|:-----------|:----------:|:----------------:|
+| Attendance/Participation | | 10% |
+| Map Quiz | Sept. 13 | 15% | 
+| Midterm 1         | Oct. 4 | 20% |
+| Midterm 2 | Nov. 15 | 25% |
+| Final | Dec. 12, 8-10:30 a.m. | 30% |
+
+### Attendance/Participation Policy
+
+```{r attenddata, include=FALSE}
+options(scipen=999)
+Attend <- read.csv("~/Dropbox/teaching/attendance-grades-relationship.csv")
+Attend$rgrade <- round(Attend$grade, 0)
+Attend$perattend <- (Attend$attendance/Attend$max)*100
+Attend <- subset(Attend, !is.na(rgrade))
+Attend$name <- as.numeric(Attend$name)
+Attend$id <- as.numeric(Attend$id)
+Attend$term <- as.numeric(Attend$term)
+Attend$class <- as.numeric(as.factor(Attend$class))
+M1 <- lm(rgrade ~ perattend, Attend)
+M2 <- lm(rgrade ~ perattend, data=subset(Attend, perattend >= 75))
+library(broom)
+
+M1df <- tidy(M1)
+M2df <- tidy(M2)
+library(ggplot2)
+library(kfigr)
+```
+
+Effectively mandatory: I deduct all participation points after five unexcused absences.
+
+- Don't ask me how many you missed. You'll know more than me.
+- Each class you miss coincides with an estimated `r round(M1$coefficients[2], 3)*5` points in your overall grade.
+
+Be prepared to answer questions. I might assign quizzes.
+
+- Quizzes will be graded/weighted against your participation grade for the semester.
+
+###
+
+```{r attendplot, eval=T, echo=F, fig.height=8.5, fig.width = 14}
+
+estdecrease <- round(M1df[2,2]*5, 3)
+estdecrease_t <- round(M1df[2, 4], 3)
+
+subtitletext <- paste0("Each missed class coincides with an estimated decrease of ", estdecrease, " points in the final grade (t = ", estdecrease_t, ")")
+
+ggplot(Attend, aes(x = perattend, y = grade)) + geom_point() + 
+  labs(x="Percent Attendance in Class", y="Final Grade in Class (0-100)") +
+                              geom_smooth(method=lm) + theme_steve_web() +
+  labs(title = "The Relationship Between Class Attendance and Final Grades, Fall 2014-Present",
+       subtitle = subtitletext)
+```
+
+###
+
+```{r calendar, eval=T, echo=F, fig.height=8.5, fig.width = 14}
+library(ggplot2)
+library(ggcal)
+library(stringr)
+
+mydate <- seq(mon+2, lastday, by="1 day")
+mydate <- c(mydate, finalexam)
+
+# Empty dates in which I won't be here.
+# Nov. 6 is Fall Break
+# Nov. 8 is PSSI
+# Thanksgiving is Nov. 19-23.
+
+remove_dates <- c(as.Date("2018-11-06"),
+                  as.Date("2018-11-08"),
+                   seq(as.Date("2018-11-19"), as.Date("2018-11-23"), by = "1 day"))
+
+mydate <- mydate[! mydate %in% remove_dates]
+
+myfills <- ifelse(format(mydate, "%w") %in% c(0,1, 3, 5,6), "Other Day" ,"Class Day")
+
+# Fill in exams
+
+exam_dates <- c(as.Date("2018-10-04"), as.Date("2018-11-15"), as.Date("2018-09-13"), finalexam)
+myfills <- ifelse(mydate %in% exam_dates, "Exam/Quiz" ,myfills)
+
+# Fill in paper due dates
+
+# myfills <- ifelse(mydate %in% c(as.Date("2018-04-14")), "Paper Due (Turnitin)", myfills)
+
+give_me_days <- seq(as.Date("2018-08-01"), as.Date("2018-12-31"), by="1 day")
+give_me_days <- as.numeric(str_sub(give_me_days, start= -2))
+
+ggcal(mydate, myfills) +
+  theme(plot.title=element_text(face="bold"),
+        plot.caption=element_text(hjust=1, size=9,
+                                    margin=margin(t=10), face="italic")) +
+  scale_fill_manual(values=c("Class Day"="steelblue", 
+                             "Other Day"="lightsteelblue",
+                             "Exam/Quiz"="indianred4",
+                             "Paper Due (Turnitin)" = "indianred4"),
+                    breaks=c("Class Day","Exam/Quiz","Paper Due (Turnitin)")) +
+  theme(legend.position="bottom") +
+#  geom_point(shape=1, size=7) +
+  geom_text(aes(label=give_me_days)) +
+  labs(caption = "Notable dates: Fall Break (Nov. 6), PSSI Meeting (Nov. 8), Thanksgiving Break (Nov. 19-23)")
+```
+
+
+### Cell Phones, Laptops, etc...
+
+Unless SDS says its mandatory, put your laptops/phones away during class.
+
+- They are terrible learning devices. Take notes by hand instead.
+- You're on Facebook or playing Pokemon Go anyway. Don't pretend you're not.
+
+
+### Email Policy
+
+I'm usually quick to respond to student e-mails. However, I may not if:
+
+1. You could answer your question by reading the syllabus.
+2. You missed a class for which there was no exam.
+3. You want to know what you missed for the class you skipped.
+4. You're protesting a grade without specific objections.
+	- Read the syllabus about protesting a grade.
+5. You want to know how many classes you missed.
+6. You're requesting an extension on an assignment.
+7. You're protesting that a late assignment is not actually "late".
+8. You're grade-grubbing.
+9. You want an extra credit opportunity.
+
+### Make-up Exams
+
+**No, *and don't bother asking***.
+
+- Sniffles/headaches don't count. Soldier through it.
+- University-sponsored events/holidays count, but give me two weeks advance.
+
+Students with valid excuses have one week *at the most* to make up an exam.
+
+### Disabilities Policy
+
+I'm more than happy to accommodate, but:
+
+- The student has to take the intiative. I can't.
+- Do let me know privately after class if I should expect to hear from SDS soon.
+
+If you require the Test Proctoring Center, *schedule your midterm and final now*.
+
+- I will not spend my free time watching you take an exam.
+
+# Etiquette and Expectations
+### My Contact Information
+
+- *Name*: Steve Miller (as in the band)
+- *E-mail*: \textcolor{clemsonorange}{svmille@clemson.edu}
+- *Office Hours*: TR: 1:30-3:30 p.m.
+- *Office*: 230A Brackett Hall
+- *Website*: \textcolor{clemsonorange}{posc1020.svmiller.com}
+
+### Additional Course Materials
+
+I don't like Canvas. I only intend to use it for:
+
+- Turnitin (and grading the Turnitin assignments)
+- Classwide e-mails
+
+I do like making lectures publicly available, though.
+
+- Check course website at [posc1020.svmiller.com](http://posc1020.svmiller.com)
+- Check my Github repository (just in case): [github.com/svmiller/posc1020](http://github.com/svmiller/posc1020)
+
+### My Expectations
+
+I come off as a bit cruel in my expectations.
+
+- I expect a lot, and I expect a commitment from you.
+- Otherwise, why bother? Your job is to become "pro-ready."
+
+I also expect it to be a bit difficult for you.
+
+- My philosophy: if you 100% understand something the first time you read it, you didn't learn anything.
+- Read and re-read if necessary.
+- Lectures should help, but they're not sufficient. You need to read.
+
+I take seriously the "science" of political science.
+
+- This may not be intuitive, but I'm also eager to help in-class or office hours.
+
+
+### Etiquette Concerns
+
+In-class:
+
+- Raise your hand and ask a question the *moment* something doesn't make sense.
+    - I do have a bad habit of talking a bit fast.
+- *Do the reading before class*. Seriously.
+- Resist the urge to write down every word on a slide.
+    - Listening is more important than reading in this context.
+
+### Etiquette Concerns
+
+Outside class: 
+
+- **Resist the urge** to e-mail me if you missed a class (for which there wasn't an exam).
+    - Short answer: you missed what was on the syllabus.
+- Please use conventional e-mail etiquette.
+    - This is a good professional exercise for you.
+- Knock first, even when the door is open.
+- You may not use my office supplies.
+- I am not a study session. Come prepared with something specific to ask or discuss.
+
+# Homework
+### You Have Homework!
+
+Basically, read these on my website:
+
+- [Taking Good Notes](http://svmiller.com/blog/2014/09/taking-good-notes/)
+- [Fun with Attendance and Grades (i.e. Students Should Attend Class)](http://svmiller.com/blog/2016/05/fun-with-attendance-grades/)
+- [The Educational Power of Discomfort](http://svmiller.com/blog/2016/05/educational-power-discomfort/)
+- [Put Your Laptops Away, Kids (Vol. 2)](http://svmiller.com/blog/2016/05/put-your-laptops-away-2/)
+
+Links available on the course website.
