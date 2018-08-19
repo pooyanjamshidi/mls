@@ -1,4 +1,4 @@
-- title: "Syllabus Day (i.e. Welcome)"
-  filename: welcome
-  dirname: welcome
-  tldr: "This lecture discusses the syllabus and outlines course expectations for the rest of the semester."
+- title: "Course Introduction"
+  filename: mls01
+  dirname: lectures
+  tldr: "This lecture reviews a real-world ML systems, challenges, and solutions."
