@@ -8,4 +8,4 @@ When we talk about Machine Learning (ML), we typically refer to a technique or a
 
 Acknowledgement
 ===================================================
-`https://github.com/svmiller/course-website`
+[Steven V. Miller](https://github.com/svmiller/course-website)
