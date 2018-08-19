@@ -8,8 +8,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://pooyanjamshidi.github.io/mls/" # the base hostname & protocol for your site
 twitter_username: pooyanjamshidi
 github_username: pooyanjamshidi
-leadimage: trump-tillerson-haley.jpg
-leadimage_description: "New to international relations? Not sure how things work? You're welcome to follow and learn from this intro-level course."
+leadimage: https://github.com/pooyanjamshidi/mls/blob/master/_images/mls-logo.pdf
+leadimage_description: "New to machine learning? Not sure how ML works in production? You're welcome to follow and learn from this graduate-level course."
 authorurl: "https://pooyanjamshidi.github.io"
 syllabus: "https://github.com/pooyanjamshidi/mls/blob/master/desc/mls.pdf"
 githublink: "https://github.com/pooyanjamshidi/mls"
