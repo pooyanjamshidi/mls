@@ -7,3 +7,8 @@
   filename: mls02
   dirname: lectures
   tldr: "This lecture introduces how to incorporate ML-based components into a larger system."
+
+- title: "Lecture 3 (August 30): Distributed Machine Learning"
+  filename: mls03
+  dirname: lectures
+  tldr: "This lecture introduces how to scale deployment (multiple node, multiple GPU) to speed up training and inference."
