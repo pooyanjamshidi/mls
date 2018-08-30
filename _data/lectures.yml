@@ -1,14 +1,14 @@
-- title: "Lecture 1 (August 23): Course Introduction"
+- title: "Lecture 1 (Aug 23, 28): Course Introduction"
   filename: mls01
   dirname: lectures
   tldr: "This lecture reviews challenges of building a real-world ML system that scales."
 
-- title: "Lecture 2 (August 28): ML System Architecture"
+- title: "Lecture 2 (Aug 30, Sept 4): Reactive Machine Learning"
   filename: mls02
   dirname: lectures
-  tldr: "This lecture introduces how to incorporate ML-based components into a larger system."
+  tldr: "This lecture reviews reactive strategies to incorporate ML-based components into a larger system."
 
-- title: "Lecture 3 (August 30): Distributed Machine Learning"
+- title: "Lecture 3 (Sept 6, 11): Distributed Machine Learning"
   filename: mls03
   dirname: lectures
-  tldr: "This lecture introduces how to scale deployment (multiple node, multiple GPU) to speed up training and inference."
+  tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
