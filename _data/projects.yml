@@ -1,0 +1,14 @@
+- title: "Project 1: Design Space Exploration of Deep Neural Networks"
+  filename: project01 - DNN
+  dirname: projects
+  tldr: "How the choice of configuration options (e.g., CPU frequency) affect inference time and energy consummations of DNNs."
+
+- title: "Project 2: Design Space Exploration of Distributed ML"
+  filename: project02 - DML
+  dirname: projects
+  tldr: "How the choice of configuration parameters in distributed ML setting affect training time?"
+
+- title: "Project 3: Design Space Exploration of Model Serving"
+  filename: project03 - Serving
+  dirname: projects
+  tldr: "How you can decrease latency of model serving (TF serving) by changing some of parameters like caching?"
