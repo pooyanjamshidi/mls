@@ -13,7 +13,7 @@
   dirname: lectures
   tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
 
-title: "Lecture 4 (Sept 13, 18): Recurrent Neural Networks for Event Forecasting"
+- title: "Lecture 4 (Sept 13, 18): Recurrent Neural Networks for Event Forecasting"
   filename: mls04
   dirname: lectures
   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
