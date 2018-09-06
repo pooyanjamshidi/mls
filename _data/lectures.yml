@@ -8,7 +8,7 @@
   dirname: lectures
   tldr: "This lecture reviews reactive strategies to incorporate ML-based components into a larger system."
 
-- title: "Lecture 3 (Sept 6, 11): Machine Learning Platformss"
+- title: "Lecture 3 (Sept 6, 11): Machine Learning Platforms"
   filename: mls03
   dirname: lectures
   tldr: "This lecture reviews a platform that facilitates building an ML pipeline in production at scale."
