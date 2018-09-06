@@ -8,12 +8,17 @@
   dirname: lectures
   tldr: "This lecture reviews reactive strategies to incorporate ML-based components into a larger system."
 
-- title: "Lecture 3 (Sept 6, 11): Distributed Machine Learning"
+- title: "Lecture 3 (Sept 6, 11): Machine Learning Platformss"
   filename: mls03
   dirname: lectures
-  tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
+  tldr: "This lecture reviews a platform that facilitates building an ML pipeline in production at scale."
 
 - title: "Lecture 4 (Sept 13, 18): Recurrent Neural Networks for Event Forecasting"
   filename: mls04
   dirname: lectures
   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
+
+- title: "Lecture 5 (Sept 20, 25): Distributed Machine Learning"
+  filename: mls05
+  dirname: lectures
+  tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
