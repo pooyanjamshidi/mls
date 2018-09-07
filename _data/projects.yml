@@ -12,3 +12,8 @@
   filename: project03-Serving
   dirname: projects
   tldr: "How you can decrease latency of model serving by changing configurations such as caching?"
+
+- title: "Project 4: Accelerating Deep Reinforcement Learning"
+  filename: project04-DRL
+  dirname: projects
+  tldr: "The aim of this project is to utilize computer system capability to accelerate Deep RL agents."
