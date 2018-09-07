@@ -16,4 +16,4 @@
 - title: "Project 4: Accelerating Deep Reinforcement Learning"
   filename: project04-DRL
   dirname: projects
-  tldr: "The aim of this project is to utilize computer system capability to accelerate Deep RL agents."
+  tldr: "The aim of this project is to utilize computer system capability to accelerate training of Deep RL agents."
