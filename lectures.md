@@ -37,14 +37,12 @@ permalink: /lectures/
 {% endfor %}
 </ul>
 
-There will be no classes in the following days: 
+There will be **no classes** on the following days (I will announce assignments and homeworks in the blackboard system): 
 - Nov. 6, 8 (I will be at [ESEC/FSE'18](https://2018.fseconference.org/home))
 - Nov. 22 (Thanksgiving)
-- Nov. 29 (Machine learning for DevOps [summit](https://www.re-work.co/events/machine-learning-for-devops-summit-2018))
+- Nov. 29 (Machine Learning for DevOps [Summit](https://www.re-work.co/events/machine-learning-for-devops-summit-2018))
 
-I will announce assignments and homeworks in the blackboard system.
-
-Milestones for your projects:
+**Milestones** for your course projects:
 - Project presentations (work in progress): Oct. 18
 - Project presentations (presenting results): Dec. 4, 6
 - Final report: Dec. 11
