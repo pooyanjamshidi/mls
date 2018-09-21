@@ -16,7 +16,7 @@
 - title: "Lecture 4 (Sept 20, 25): Scalable Machine Learning"
   filename: mls04
   dirname: lectures
-  tldr: "This lecture introduces variations of gradient descent and explores ideas how to it scale up using parallel computing."
+  tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
 
 - title: "Lecture 5 (Sept 27, Oct 2): Distributed Machine Learning"
   filename: mls05
