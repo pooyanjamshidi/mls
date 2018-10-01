@@ -45,6 +45,6 @@ There will be **no classes** on the following days (I will announce assignments 
 - Nov. 29 (I will be at Machine Learning for DevOps [Summit](https://www.re-work.co/events/machine-learning-for-devops-summit-2018))
 
 **Milestones** for your course projects:
-- Project presentations (work in progress): Oct. 23
-- Project presentations (presenting results): Dec. 4, 6
-- Final report: Dec. 11
+- Project Milestone: Oct. 23
+- Final Presentation: Dec. 4, 6
+- Final Report: Dec. 11
