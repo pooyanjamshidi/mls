@@ -48,7 +48,7 @@ Your supplementary material might include:
 - `IPython notebook, videos, interactive visualizations, demos, etc`.
 
 Some examples of good project reports:
-- [`Sample 1`](http://cs231n.stanford.edu/reports/2017/pdfs/130.pdf`)
-- [`Sample 2`](`http://cs231n.stanford.edu/reports/2017/pdfs/121.pdf`)
-- [`Sample 3`](`http://cs231n.stanford.edu/reports/2017/pdfs/610.pdf`)
-- [`Sample 4`](`http://cs231n.stanford.edu/reports/2017/pdfs/116.pdf`)
+- [`Sample 1`](http://cs231n.stanford.edu/reports/2017/pdfs/130.pdf)
+- [`Sample 2`](http://cs231n.stanford.edu/reports/2017/pdfs/121.pdf)
+- [`Sample 3`](http://cs231n.stanford.edu/reports/2017/pdfs/610.pdf)
+- [`Sample 4`](http://cs231n.stanford.edu/reports/2017/pdfs/116.pdf)
