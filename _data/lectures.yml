@@ -13,17 +13,17 @@
   dirname: lectures
   tldr: "This lecture reviews a platform that facilitates building an ML pipeline in production at scale."
 
-- title: "Lecture 4 (Sept 20, 25): Scalable Machine Learning"
+- title: "Lecture 4 (Sept 20, 25, 27): Scalable Machine Learning"
   filename: mls04
   dirname: lectures
   tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
 
-- title: "Lecture 5 (Sept 27, Oct 2): Distributed Machine Learning"
+- title: "Lecture 5 (Oct 2, 4): Distributed Machine Learning"
   filename: mls05
   dirname: lectures
   tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
 
-- title: "Lecture 6 (Oct 4, 9): Recurrent Neural Networks for Event Forecasting"
+- title: "Lecture 6 (Oct 9, 11): Recurrent Neural Networks for Event Forecasting"
   filename: mls06
   dirname: lectures
   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
