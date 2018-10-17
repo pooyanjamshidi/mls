@@ -27,3 +27,8 @@
   filename: mls06
   dirname: lectures
   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
+
+- title: "Lecture 6 (Oct 16): Instrinsic Dimension"
+  filename: mls07
+  dirname: lectures
+  tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
