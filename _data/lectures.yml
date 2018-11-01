@@ -32,3 +32,8 @@
   filename: mls07
   dirname: lectures
   tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
+
+- title: "Lecture 8 (Nov 1, 13, 15): Performance Analysis"
+  filename: mls08
+  dirname: lectures
+  tldr: "This lecture discusses the challenges of performance understanding of highly-configurable systems."

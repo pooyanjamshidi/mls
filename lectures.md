@@ -46,5 +46,9 @@ There will be **no classes** on the following days (I will announce assignments 
 
 **Timeline** for your course projects:
 - Project Milestone: Oct. 23 (Projects 1-2), Oct. 25 (Projects 3-4)
-- Final Presentation: Dec. 4, 6
+- Final Presentation: 
+  - Nov. 27 (Project 1) 
+  - Nov. 29 (Project 2)
+  - Dec. 4 (Project 3) 
+  - Dec. 6 (Project 4)
 - Final Report: Dec. 11
