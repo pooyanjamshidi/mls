@@ -23,7 +23,7 @@
   dirname: lectures
   tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
 
-- title: "Lecture 6 (Oct 9, 11): Recurrent Neural Networks for Event Forecasting"
+- title: "Lecture 6 (Oct 9, 11): Recurrent Neural Networks"
   filename: mls06
   dirname: lectures
   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
@@ -33,7 +33,12 @@
   dirname: lectures
   tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
 
-- title: "Lecture 8 (Nov 1, 13, 15): Performance Analysis"
+- title: "Lecture 8 (Nov 1, 13): ML as Highly-Configurable System"
   filename: mls08
   dirname: lectures
-  tldr: "This lecture discusses the challenges of performance understanding of highly-configurable systems."
+  tldr: "This lecture discusses the challenges of performance understanding of machine learning systems."
+
+- title: "Lecture 9 (Nov 15, 20, 27): Transfer Learning"
+  filename: mls08
+  dirname: lectures
+  tldr: "This lecture discusses transfer learning to enable understanding performance of machine learning systems."
