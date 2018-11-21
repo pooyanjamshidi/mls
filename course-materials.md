@@ -17,3 +17,7 @@ Students must read the following documents in the first week of class. These out
 - [Uber Engineering](https://eng.uber.com/)
 - [The Netflix Tech Blog](https://medium.com/netflix-techblog)
 - [Spotify Labs](https://labs.spotify.com/)
+
+## Coursework Template
+
+Please use this [template](https://github.com/pooyanjamshidi/mls/blob/master/resources/coursework-template.zip) for submitting your courseworks.
