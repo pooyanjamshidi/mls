@@ -6,7 +6,7 @@ description: "When we talk about Machine Learning (ML), we typically refer to a 
 office_hours: "Friday 1-3pm"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://pooyanjamshidi.github.io/mls/" # the base hostname & protocol for your site
+url: "https://pooyanjamshidi.github.io/mls" # the base hostname & protocol for your site
 twitter_username: pooyanjamshidi
 github_username: pooyanjamshidi
 leadimage: mls-logo.jpg
