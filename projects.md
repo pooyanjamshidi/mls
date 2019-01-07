@@ -54,6 +54,6 @@ Some examples of good project reports:
 - [`Sample 4`](http://cs231n.stanford.edu/reports/2017/pdfs/116.pdf)
 
 Project reports - CSCE 790 - Fall 2018:
-- [Project1](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project1.pdf)
-- [Project3](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project3.pdf)
+- [`Project1: Hassan Alamri, Yang Ren, Rui Xin`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project1.pdf)
+- [`Project3: Joshi Bharat, Harrison Howell, Jianhai Su`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project3.pdf)
 
