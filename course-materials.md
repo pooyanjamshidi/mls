@@ -4,11 +4,13 @@ title: Course Materials
 permalink: /course-materials/
 ---
 
-{% include image.html url="/mls/_images/Smith-MLS-HI.png" caption="The Textbook for the Semester" width=300 align="right" %}
+{% include image.html url="/mls/_images/Hulten-IntelligentSys.jpg" caption="The Textbook for the Semester" width=300 align="right" %}
 
 ## Book
 
-Jeff Smith (2018). [*Machine Learning Systems: Designs that scale*](https://www.manning.com/books/machine-learning-systems). Manning Publications.
+Hulten, Geoff. [*Building Intelligent Systems: A Guide to Machine Learning Engineering.*](http://intelligentsystem.io/book/) Apress; 1st ed. edition (March 7, 2018).
+
+<!-- Jeff Smith (2018). [*Machine Learning Systems: Designs that scale*](https://www.manning.com/books/machine-learning-systems). Manning Publications. -->
 
 ## Additional Course Materials
 
