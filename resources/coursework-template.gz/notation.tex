@@ -1,0 +1,77 @@
+% quick way of adding a figure
+\newcommand{\fig}[3]{
+ \begin{center}
+ \scalebox{#3}{\includegraphics[#2]{#1}}
+ \end{center}
+}
+
+%\newcommand*{\point}[1]{\vec{\mkern0mu#1}}
+\newcommand{\ci}[0]{\perp\!\!\!\!\!\perp} % conditional independence
+\newcommand{\point}[1]{{#1}} % points 
+\renewcommand{\vec}[1]{{\boldsymbol{{#1}}}} % vector
+\newcommand{\mat}[1]{{\boldsymbol{{#1}}}} % matrix
+\newcommand{\R}[0]{\mathds{R}} % real numbers
+\newcommand{\Z}[0]{\mathds{Z}} % integers
+\newcommand{\N}[0]{\mathds{N}} % natural numbers
+\newcommand{\nat}[0]{\mathds{N}} % natural numbers
+\newcommand{\Q}[0]{\mathds{Q}} % rational numbers
+\ifxetex
+\newcommand{\C}[0]{\mathds{C}} % complex numbers
+\else
+\newcommand{\C}[0]{\mathds{C}} % complex numbers
+\fi
+\newcommand{\tr}[0]{\text{tr}} % trace
+\renewcommand{\d}[0]{\mathrm{d}} % total derivative
+\newcommand{\inv}{^{-1}} % inverse
+\newcommand{\id}{\mathrm{id}} % identity mapping
+\renewcommand{\dim}{\mathrm{dim}} % dimension
+\newcommand{\rank}[0]{\mathrm{rk}} % rank
+\newcommand{\determ}[1]{\mathrm{det}(#1)} % determinant
+\newcommand{\scp}[2]{\langle #1 , #2 \rangle}
+\newcommand{\kernel}[0]{\mathrm{ker}} % kernel/nullspace
+\newcommand{\img}[0]{\mathrm{Im}} % image
+\newcommand{\idx}[1]{{(#1)}}
+\DeclareMathOperator*{\diag}{diag}
+\newcommand{\E}{\mathds{E}} % expectation
+\newcommand{\var}{\mathds{V}} % variance
+\newcommand{\gauss}[2]{\mathcal{N}\big(#1,\,#2\big)} % gaussian distribution N(.,.)
+\newcommand{\gaussx}[3]{\mathcal{N}\big(#1\,|\,#2,\,#3\big)} % gaussian distribution N(.|.,.)
+\newcommand{\gaussBig}[2]{\mathcal{N}\left(#1,\,#2\right)} % see above, but with brackets that adjust to the height of the arguments
+\newcommand{\gaussxBig}[3]{\mathcal{N}\left(#1\,|\,#2,\,#3\right)} % see above, but with brackets that adjust to the height of the arguments
+\DeclareMathOperator{\cov}{Cov} % covariance (matrix) 
+\ifxetex
+\renewcommand{\T}[0]{^\top} % transpose
+\else
+\newcommand{\T}[0]{^\top}
+\fi
+% matrix determinant
+\newcommand{\matdet}[1]{
+\left|
+\begin{matrix}
+#1
+\end{matrix}
+\right|
+}
+
+
+
+%%% various color definitions
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+
+\newcommand{\blue}[1]{{\color{blue}#1}}
+\newcommand{\red}[1]{{\color{red}#1}}
+\newcommand{\green}[1]{{\color{darkgreen}#1}}
+\newcommand{\orange}[1]{{\color{orange}#1}}
+\newcommand{\magenta}[1]{{\color{magenta}#1}}
+\newcommand{\cyan}[1]{{\color{cyan}#1}}
+
+
+% redefine emph
+\renewcommand{\emph}[1]{\blue{\bf{#1}}}
+
+% place a colored box around a character
+\gdef\colchar#1#2{%
+  \tikz[baseline]{%
+  \node[anchor=base,inner sep=2pt,outer sep=0pt,fill = #2!20] {#1};
+    }%
+}%
