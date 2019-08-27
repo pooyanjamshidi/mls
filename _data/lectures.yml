@@ -1,4 +1,4 @@
-- title: "Lecture 1 (Aug 23, 28): Course Introduction"
+- title: "Lecture 1 (Aug 22, 27): Course Introduction on Machine Learning Systems"
   filename: mls01
   dirname: lectures
   tldr: "This lecture reviews challenges of building a real-world ML system that scales."

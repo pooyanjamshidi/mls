@@ -5,6 +5,8 @@ email: pjamshid@cse.sc.edu
 description: "When we talk about Artificial Intelligence (AI) in general and Machine Learning (ML) in particular, we typically refer to a technique or an algorithm that gives the computer systems the ability to learn and to reason with data. However, there is a lot more to AI/ML than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between AI/ML as a technique versus AI/ML as a system in production." 
 learning_goals: "By the end of this class, I hope: (i) you will be able to apply state of the art ML algorithms in whatever problem you are interested in at scale and learn how to deal with unique challenges that only may happen when building real-world production-ready AI/ML systems; (ii) I also hope I can convey my own excitement about AI/ML systems to you, and (iii) by the conclusion of this class you are well qualified for doing research in AI/ML systems research."
 office_hours: "Friday 1-3pm"
+piazzaurl: "http://piazza.com/sc/fall2019/csce590/home"
+
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://pooyanjamshidi.github.io/mls" # the base hostname & protocol for your site
