@@ -37,6 +37,7 @@ permalink: /lectures/
 {% endfor %}
 </ul>
 
+<!-- 2018 details -->
 <!-- There will be **no classes** on the following days (I will announce assignments and homeworks in the blackboard system): 
 - Oct 18 (Fall break)
 - Nov. 6 (Election day)
