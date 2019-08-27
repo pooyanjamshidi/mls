@@ -69,4 +69,4 @@ All homeworks must be submitted in the following [template](https://github.com/p
 
 ## Course Syllabus
 
-[Syllabus](https://github.com/pooyanjamshidi/mls/blob/master/syllabus/mls-590.pdf)
+[Syllabus](https://pooyanjamshidi.github.io/mls/syllabus/mls-590.pdf)
