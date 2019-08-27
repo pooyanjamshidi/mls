@@ -37,16 +37,15 @@ permalink: /lectures/
 {% endfor %}
 </ul>
 
-There will be **no classes** on the following days (I will announce assignments and homeworks in the blackboard system): 
+<!-- There will be **no classes** on the following days (I will announce assignments and homeworks in the blackboard system): 
 - Oct 18 (Fall break)
 - Nov. 6 (Election day)
 - Nov. 8 (I will be at [ESEC/FSE'18](https://2018.fseconference.org/home))
 - Nov. 22 (Thanksgiving)
-- Nov. 29 (I will be at Machine Learning for DevOps [Summit](https://www.re-work.co/events/machine-learning-for-devops-summit-2018))
+- Nov. 29 (I will be at Machine Learning for DevOps [Summit](https://www.re-work.co/events/machine-learning-for-devops-summit-2018)) -->
 
 **Timeline** for your course projects:
-- Project Milestone: Oct. 23 (Projects 1-2), Oct. 25 (Projects 3-4)
-- Final Presentation: 
-  - Nov. 27 (Project 1) 
-  - Dec. 6 (Project 2,3,4)
-- Final Report: Dec. 11
+- Project Proposal: September 12
+- Project Milestone: October 17
+- Posters: November 28 
+- Final Report: December 3
