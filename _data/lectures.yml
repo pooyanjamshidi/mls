@@ -1,44 +1,49 @@
-- title: "Lecture 1 (Aug 22, 27): Course Introduction on Machine Learning Systems"
+- title: "Lecture 1 (Aug 22): Course Introduction: Machine Learning Systems"
+  filename: mls00
+  dirname: lectures
+  tldr: "This lecture reviews course requirement, learning goals, policies, and expectations."
+
+- title: "Lecture 2 (Aug 27, 29): Introduction to Machine Learning Systems"
   filename: mls01
   dirname: lectures
   tldr: "This lecture reviews challenges of building a real-world ML system that scales."
-
-- title: "Lecture 2 (Aug 30, Sept 4): Reactive Machine Learning"
+  
+- title: "Lecture 3 (Sept 3, 5): Reactive Machine Learning"
   filename: mls02
   dirname: lectures
   tldr: "This lecture reviews reactive strategies to incorporate ML-based components into a larger system."
 
-- title: "Lecture 3 (Sept 6, 18): Machine Learning Platforms"
+- title: "Lecture 4: Machine Learning Platforms"
   filename: mls03
   dirname: lectures
   tldr: "This lecture reviews a platform that facilitates building an ML pipeline in production at scale."
 
-- title: "Lecture 4 (Sept 20, 25, 27): Scalable Machine Learning"
+- title: "Lecture 5: Scalable Machine Learning"
   filename: mls04
   dirname: lectures
   tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
 
-- title: "Lecture 5 (Oct 2, 4): Distributed Machine Learning"
+- title: "Lecture 6: Distributed Machine Learning"
   filename: mls05
   dirname: lectures
   tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
 
-- title: "Lecture 6 (Oct 9, 11): Recurrent Neural Networks"
+- title: "Lecture 7: Recurrent Neural Networks"
   filename: mls06
   dirname: lectures
   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
 
-- title: "Lecture 7 (Oct 16): Intrinsic Dimension"
+- title: "Lecture 8: Intrinsic Dimension"
   filename: mls07
   dirname: lectures
   tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
 
-- title: "Lecture 8 (Nov 1, 13): ML as Highly-Configurable System"
+- title: "Lecture 9: ML as Highly-Configurable System"
   filename: mls08
   dirname: lectures
   tldr: "This lecture discusses the challenges of performance understanding of machine learning systems."
 
-- title: "Lecture 9 (Nov 15, 20, 27): Transfer Learning"
+- title: "Lecture 10: Transfer Learning"
   filename: mls08
   dirname: lectures
   tldr: "This lecture discusses transfer learning to enable understanding performance of machine learning systems."
