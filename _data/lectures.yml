@@ -3,47 +3,57 @@
   dirname: lectures
   tldr: "This lecture reviews course requirement, learning goals, policies, and expectations."
 
-- title: "Lecture 2 (Aug 27, 29): Introduction to Machine Learning Systems"
+- title: "Lecture 2 (Aug 27, 29): Introduction to Machine Learning Systems (Uber Case Study)"
   filename: mls01
   dirname: lectures
   tldr: "This lecture reviews challenges of building a real-world ML system that scales."
   
-- title: "Lecture 3 (Sept 3, 5): Reactive Machine Learning"
+- title: "Lecture 3 (Sept 3): Reactive Machine Learning"
   filename: mls02
   dirname: lectures
   tldr: "This lecture reviews reactive strategies to incorporate ML-based components into a larger system."
 
-- title: "Lecture 4: Machine Learning Platforms"
+- title: "Lecture 4 (Sept 5, 10): Optimization and Neural Nets"
+  filename: optimization_dnn
+  dirname: lectures
+  tldr: "This lecture builds the foundation of optimization and deep learning."
+
+- title: "Lecture 5 (Sept 12, 17): Deep Convolutional Neural Networks"
+  filename: cnn
+  dirname: lectures
+  tldr: "This lecture builds the foundation of deep learning systems."
+
+- title: "Lecture 6: Machine Learning Platforms"
   filename: mls03
   dirname: lectures
   tldr: "This lecture reviews a platform that facilitates building an ML pipeline in production at scale."
 
-- title: "Lecture 5: Scalable Machine Learning"
+- title: "Lecture 7: Scalable Machine Learning"
   filename: mls04
   dirname: lectures
   tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
 
-- title: "Lecture 6: Distributed Machine Learning"
+- title: "Lecture 8: Distributed Machine Learning"
   filename: mls05
   dirname: lectures
   tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
 
-- title: "Lecture 7: Recurrent Neural Networks"
+- title: "Lecture 9: Recurrent Neural Networks"
   filename: mls06
   dirname: lectures
   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
 
-- title: "Lecture 8: Intrinsic Dimension"
+- title: "Lecture 10: Intrinsic Dimension"
   filename: mls07
   dirname: lectures
   tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
 
-- title: "Lecture 9: ML as Highly-Configurable System"
+- title: "Lecture 11: ML as Highly-Configurable System"
   filename: mls08
   dirname: lectures
   tldr: "This lecture discusses the challenges of performance understanding of machine learning systems."
 
-- title: "Lecture 10: Transfer Learning"
+- title: "Lecture 12: Transfer Learning"
   filename: mls08
   dirname: lectures
   tldr: "This lecture discusses transfer learning to enable understanding performance of machine learning systems."
