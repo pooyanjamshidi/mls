@@ -18,7 +18,7 @@
   dirname: lectures
   tldr: "This lecture builds the foundation of optimization and deep learning."
 
-- title: "Lecture5 (Sept 12): Learning Theory"
+- title: "Lecture 5 (Sept 12): Learning Theory"
   filename: learning_theory
   dirname: lectures
   tldr: "This lecture reviews basic concepts related to statistical learning theory (e.g., hypothesis space)."
