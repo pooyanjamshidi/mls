@@ -23,8 +23,7 @@ permalink: /projects/
 
 ## Final Report
 
-Each group needs to write a project report (in addition to the IPython notebook, their content could overlap) of at least four-pages, not including references. A one-page abstract for the report is due on the date you will present the progress, **October 23**. The final project report is due on **December 11**.
-
+Each group needs to write a project report (in addition to the IPython notebook, their content could overlap) of at least four-pages, not including references. 
 
 ## Guideline
 
