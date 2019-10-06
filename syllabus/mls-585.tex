@@ -4,7 +4,7 @@
 
 \newcommand{\blankline}{\quad\pagebreak[2]}
 
-\title{CSCE 590 - Machine Learning Systems}
+\title{CSCE 585 -- Machine Learning Systems}
 \author{Pooyan Jamshidi}
 \date{Fall 2019}
 
@@ -43,7 +43,7 @@
 \usepackage{layout}   
 \lhead{}
 \chead{}
-\rhead{\footnotesize Machine Learning Systems}
+\rhead{\footnotesize CSCE 585 -- Machine Learning Systems}
 \lfoot{}
 \cfoot{\small \thepage/\pageref*{LastPage}}
 \rfoot{}
@@ -79,57 +79,63 @@ Office: Innovation 2207 & Class Room: 300MN 102 \\
 
 \vspace{10mm}
 
+\section*{Bulletin description}
+Design, implementation, troubleshooting, testing, and deploying machine learning systems at scale; Deep learning systems stack from design to compiler and hardware deployment; Research directions
+
+\section*{Prerequisites}
+CSCE 240 or 206.
+
 \section*{Course Description}
 
-When we talk about Machine Learning (ML) or Artificial Intelligence (AI), we typically refer to a technique or an algorithm that gives the computer systems the ability to learn and to reason with data. However, there is a lot more to ML/AI than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between ML/AI as a technique versus ML/AI as a system in production. A ML/AI system involves a significant number of components and it is important that they remain responsive in the face of failure and changes in load. This course covers several strategies to keep ML/AI systems responsive, resilient, and elastic. ML/AI systems are different than other computer systems when it comes to building, testing, deploying, delivering, and evolving. ML/AI systems also have unique challenges when we need to change the architecture or behavior of the system. Therefore, it is essential to learn how to deal with such unique challenges that only may happen when building real-world production-ready ML/AI systems (e.g., performance issues, memory leaking, communication issues, multi-GPU issues, etc). The focus of this course will be primarily on deep learning systems, but the principles will remain similar across all ML/AI systems. More specifically, we will mainly target the following concerns:
+When we talk about Machine Learning (ML) or Artificial Intelligence (AI), we typically refer to a technique or an algorithm that gives the computer systems the ability to learn and to reason with data. However, there is a lot more to ML/AI than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between ML/AI as a technique versus ML/AI as a system in production. A ML/AI system involves a significant number of components and it is important that they remain responsive in the face of failure and changes in load. This course covers several strategies to keep ML/AI systems responsive, resilient, and elastic. ML/AI systems are different than other computer systems when it comes to building, testing, deploying, delivering, and evolving. ML/AI systems also have unique challenges when we need to change the architecture or behavior of the system. Therefore, it is essential to learn how to deal with such unique challenges that only may happen when building real-world production-ready ML/AI systems (e.g., performance issues, memory leaking, communication issues, multi-GPU issues, etc). The focus of this course will be primarily on \emph{deep learning systems}, but the principles will remain similar across all ML/AI systems. More specifically, we will mainly target the following concerns:
 
 \begin{itemize}
 
 \item Data scientists often make great progress at building models with cutting edge techniques but turning those models into products is challenging. For example, data scientists may work with unversioned notebooks on static data sets and focus on prediction accuracy while ignoring scalability, robustness, update latency, or operating cost.
 
-\item Software engineers are trained with clear specifications and tend to focus on code, but may not be aware of the difficulties of working with data and unreliable models. They have a large toolset for decision making and quality assurance but it is not obvious how to apply those to intelligent systems and their challenges.
-To what degree can existing SE practices be used for building intelligent systems? To what degree are new practices needed?
+\item Software engineers are trained with clear specifications and tend to focus on code, but may not be aware of the difficulties of working with data and unreliable models. They have a large toolset for decision making and quality assurance but it is not obvious how to apply those to intelligent systems and their challenges. To what degree can existing SE practices be used for building intelligent systems? To what degree are new practices needed?
 \end{itemize}
 
-This course adopts a software and systems engineering perspective on building intelligent systems, focusing on what a software engineer can do to turn a machine learning idea into a scalable and reliable product. We will also cover some core machine learning topics such as:
+This course adopts a systems perspective on building intelligent systems, focusing on what a data scientist can do to turn a machine learning idea into a scalable and reliable product. We will also cover some core machine learning topics such as:
 \begin{itemize}
-  \item Machine Learning Systems Concepts
-  \item Reactive Machine Learning
-  \item Machine Learning Platforms
-  \item Scalable Machine Learning
-  \item Distributed Machine Learning
-  \item Intrinsic Dimension of ML Models
-  \item ML as Highly-Configurable System
-  \item Transfer Learning
+\item Machine Learning Systems: Concepts, Challenges, and Solutions
+\item Optimization, Neural Nets, and Learning Theory
+\item Deep Convolutional Neural Networks
+\item Deep Learning System Stack
+\item Backprop and Automatic Differentiation
+\item Hardware Backends: GPU, CPU, TPU
+\item Hardware and Memory Optimization
+\item Machine Learning Platforms and Model Serving
+\item Distributed and Scalable Machine Learning
+\item Troubleshooting Deep Neural Networks
+\item Machine Learning System Testing and Deployment at Scale 
+\item Setting up Machine Learning Projects and Teams 
+\item Highly-Configurable Machine Learning Systems and Transfer Learning
+\item Research Directions
 \end{itemize}
 
 %Rather than focusing on modeling and learning itself, it assumes a working relationship with a data scientist and focuses on issues of design, implementation, operation, and assurance and how those interact with the data scientist's modeling.
 
+\newpage
 
 \section*{Learning Outcomes}
 \begin{enumerate}
-\item Explain differences between ML as predictive technique and as a computer system.
-
-\item Describe how a distributed ML system works in production and insight into challenges.
-
-\item Locate technical debt in building ML systems.
-
-\item Employ design strategies and best practices to mitigate technical debt.
-
-\item Incorporate ML-based components into a larger system.
-
-% \item Understand how to build a system that can put the power of machine learning to use.
-
-\item State the principles that govern ML systems.
-
-\item Build systems that are more capable, both as software and as predictive systems.
-
-\item Identify systems issues and apply strategies to avoid them in production ML systems.
+\item Explaining differences between ML as predictive technique and as a computer system.
+\item Describing how a distributed ML system works in production and insight into challenges.
+\item Locating technical debt in building ML systems.
+\item Employing design strategies and best practices to mitigate technical debt.
+\item Incorporating ML-based components into a larger system.
+\item Stating the principles that govern ML systems.
+\item Building systems that are more capable, both as software and as predictive systems.
+\item Identifying systems issues and apply strategies to avoid them in production ML systems.
+\item Picking the right framework and compute infrastructure
+\item Troubleshooting training and ensuring reproducibility
+\item Deploying the model at scale
 
 \end{enumerate}
 
 
-\section*{Course Syllabi}
+\section*{Why this course is required in modern computer science curriculum?}
 
 In this course, we will understand central principles of \textbf{machine learning systems}. We will begin by reviewing common challenges and technical debt that may incur massive ongoing maintenance costs in real-world ML systems. We explore several ML-specific risk factors to account for in system design. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, configuration issues, changes in the external world, and a variety of system-level anti-patterns. We will review many different examples of real-world ML systems and the unique challenges one may encounter to integrate a research ML technique into a production-ready system. We will review unique challenges relevant to each component of an ML system from data collection, feature generation, model learning, model evaluation, model publishing, and acting on the real-world. 
 
@@ -140,15 +146,14 @@ In this course, we will also study strategies and principles of distributed ML e
 
 For the course projects/homeworks, students will work on different aspects of ML systems. For more details, please refer to the following page: \url{https://pooyanjamshidi.github.io/mls/projects/}. There are materials for previous editions of this course.
 
-\section*{Prerequisites}
 
-Familiarity with Python or C/C++: we will mainly be using python for the course projects, and C/C++ may be handy for some of the background hacking.
+\section*{Readings and Textbooks}
 
-
-\section*{Readings}
-
+No textbook is required, here are some recommended materials for reading:
 \begin{itemize}
 \item Hulten, Geoff. Building Intelligent Systems: A Guide to Machine Learning Engineering. Apress; 1st ed. edition (March 7, 2018). \url{http://intelligentsystem.io/book/}
+\item Deep Learning Book (\url{https://deeplearningbook.org}) is a comprehensive material for the field.
+\item CS231n (\url{http://cs231n.stanford.edu/}) is a great course to get started on DL for vision.
 \item Uber Engineering: \url{https://eng.uber.com/}
 \item The Netflix Tech Blog: \url{https://medium.com/netflix-techblog}
 \item Spotify Labs: \url{https://labs.spotify.com/}
@@ -181,6 +186,21 @@ I would encourage you to discuss or brainstorm with other students or professors
 
 Any student who has a need for accommodation based on the impact of
 a documented disability, please contact the Office of Student Disability Services: Phone: 803-777-6142, Email: \textit{sasds@mailbox.sc.edu}, Address: 1523 Greene Street, LeConte College Room 112A, Web: \url{https://www.sc.edu/about/offices_and_divisions/student_disability_resource_center/index.php}.
+
+\subsection*{Late Work}
+
+Homework assignments are due at the time listed on Dropbox.  No late work will be accepted. Submitting all assignments is a necessary condition for passing this class.
+
+\subsection*{Syllabus Change Policy}
+
+This syllabus is a guide and every attempt is made to provide an accurate overview of the course. However, circumstances and events may make it necessary for the instructor to modify the syllabus during the semester and may depend, in part, on the progress, needs, and experiences of the students. Changes to the syllabus will be made with advance notice.
+
+\subsection*{Policies and Procedures}
+
+This section contains some general rules that will be enforced during this course. Please review these guidelines carefully. The course is governed by the policies and procedures of the university (http://www.sc.edu/policies/ppm/staf625.pdf). Violations of this code can result in actions varying from a failing grade to expulsion from the university.
+
+
+\newpage
 
 \subsection*{Grading Policy (undergraduate students only)}
 \begin{itemize}
@@ -222,10 +242,26 @@ F & [0 -- 40)\\
 \end{tabular}
 
 
-
+\newpage
 
 \section*{Course Schedule}
 \url{https://pooyanjamshidi.github.io/mls/lectures/}
 
+\begin{itemize}
+\item Week 1: Machine Learning Systems: Concepts, Challenges, and Solutions
+\item Week 2: Optimization, Neural Nets, and Learning Theory
+\item Week 3: Deep Convolutional Neural Networks
+\item Week 4: Deep Learning System Stack
+\item Week 5: Backprop and Automatic Differentiation
+\item Week 6: Hardware Backends: GPU, CPU, TPU
+\item Week 7: Hardware and Memory Optimization
+\item Week 8: Machine Learning Platforms and Model Serving
+\item Week 9: Distributed and Scalable Machine Learning
+\item Week 10: Troubleshooting Deep Neural Networks
+\item Week 11: Machine Learning System Testing and Deployment at Scale 
+\item Week 12: Setting up Machine Learning Projects and Teams 
+\item Week 13: Highly-Configurable Machine Learning Systems and Transfer Learning
+\item Week 14: Research Directions
+\end{itemize}
 
 \end{document}
