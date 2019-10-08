@@ -33,37 +33,42 @@
   dirname: lectures
   tldr: "This lecture reviews the full-stack deep learning system development."
 
-- title: "Lecture 8: Machine Learning Platforms"
+- title: "Lecture 8 (Oct 8): Backpropagation and Automatic Differentiation"
+  filename: backprop
+  dirname: lectures
+  tldr: "This lecture reviews backprop and automatic differentiation."
+
+- title: "Lecture 9: Machine Learning Platforms"
   filename: mls03
   dirname: lectures
   tldr: "This lecture reviews a platform that facilitates building an ML pipeline in production at scale."
 
-- title: "Lecture 9: Scalable Machine Learning"
+- title: "Lecture 10: Scalable Machine Learning"
   filename: mls04
   dirname: lectures
   tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
 
-- title: "Lecture 10: Distributed Machine Learning"
+- title: "Lecture 11: Distributed Machine Learning"
   filename: mls05
   dirname: lectures
   tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
 
-- title: "Lecture 11: Recurrent Neural Networks"
+- title: "Lecture 12: Recurrent Neural Networks"
   filename: mls06
   dirname: lectures
   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
 
-- title: "Lecture 12: Intrinsic Dimension"
+- title: "Lecture 13: Intrinsic Dimension"
   filename: mls07
   dirname: lectures
   tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
 
-- title: "Lecture 13: ML as Highly-Configurable System"
+- title: "Lecture 14: ML as Highly-Configurable System"
   filename: mls08
   dirname: lectures
   tldr: "This lecture discusses the challenges of performance understanding of machine learning systems."
 
-- title: "Lecture 14: Transfer Learning"
+- title: "Lecture 15: Transfer Learning"
   filename: mls08
   dirname: lectures
   tldr: "This lecture discusses transfer learning to enable understanding performance of machine learning systems."
