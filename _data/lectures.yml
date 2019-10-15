@@ -38,6 +38,11 @@
   dirname: lectures
   tldr: "This lecture reviews backprop and automatic differentiation."
 
+- title: "Lecture 8 (Oct 15-17): High-Performance Hardware for Deep Learning"
+  filename: deephardware
+  dirname: lectures
+  tldr: "This lecture reviews hardware backends for deep learning."
+
 - title: "Lecture 9: Machine Learning Platforms"
   filename: mls03
   dirname: lectures
