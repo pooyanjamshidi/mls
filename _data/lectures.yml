@@ -43,35 +43,35 @@
   dirname: lectures
   tldr: "This lecture reviews hardware backends for deep learning."
 
-- title: "Lecture 9: Machine Learning Platforms"
+- title: "Lecture 9 (Oct 24-29-31): Optimization and Performance Understanding of ML Systems"
+  filename: mlsysperf
+  dirname: lectures
+  tldr: "This lecture discusses performance optimization of machine learning systems."
+
+- title: "Lecture 10: Machine Learning Platforms"
   filename: mls03
   dirname: lectures
   tldr: "This lecture reviews a platform that facilitates building an ML pipeline in production at scale."
 
-- title: "Lecture 10: Scalable Machine Learning"
+- title: "Lecture 11: Scalable Machine Learning"
   filename: mls04
   dirname: lectures
   tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
 
-- title: "Lecture 11: Distributed Machine Learning"
+- title: "Lecture 12: Distributed Machine Learning"
   filename: mls05
   dirname: lectures
   tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
 
-- title: "Lecture 12: Recurrent Neural Networks"
+- title: "Lecture 13: Recurrent Neural Networks"
   filename: mls06
   dirname: lectures
   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
 
-- title: "Lecture 13: Intrinsic Dimension"
+- title: "Lecture 14: Intrinsic Dimension"
   filename: mls07
   dirname: lectures
   tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
-
-- title: "Lecture 14: ML as Highly-Configurable System"
-  filename: mls08
-  dirname: lectures
-  tldr: "This lecture discusses the challenges of performance understanding of machine learning systems."
 
 - title: "Lecture 15: Transfer Learning"
   filename: mls08
