@@ -18,8 +18,7 @@
 
          <p class="text">
 		<strong>Office hours: {{ site.office_hours }}</strong> <br />
-    Computer Science and Engineering, RM 2207<br />
-		550 Assembly Street<br /></p> <!-- {{ site.description }} -->
+    Storey Innovation Center, RM 2207</p> <!-- {{ site.description }} -->
       </div>
 
       <div class="footer-col  footer-col-3">
@@ -34,13 +33,13 @@
   </li>
 {% endif %}
 
-          {% if site.twitter_username %}
+<!--           {% if site.twitter_username %}
   <li>
     <a href="https://twitter.com/{{ site.twitter_username }}">
       <i class="fab fa-twitter" style="color:gray"></i> {{ site.twitter_username }}
     </a>
   </li>
-{% endif %}
+{% endif %} -->
 
           {% if site.google_scholar_id %}
   <li>
@@ -61,7 +60,7 @@
           {% if site.authorurl %}
   <li>
     <a href="{{site.authorurl}}">
-      <i class="fas fa-globe" style="color:gray"></i> {{site.authorurl  | remove: "https://" | remove: "http://" | remove: "www."}}
+      <i class="fas fa-globe" style="color:gray"></i> {{site.authorurl  | remove: "https://" | remove: "http://" | remove: "www." | remove: ".github.io"}}
     </a>
   </li>
 {% endif %}
