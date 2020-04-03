@@ -8,7 +8,7 @@ office_hours: "Friday 1-3pm"
 piazzaurl: "http://piazza.com/sc/fall2019/csce590/home"
 
 
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/mls/" # the subpath of your site, e.g. /blog/
 url: "https://pooyanjamshidi.github.io/mls" # the base hostname & protocol for your site
 twitter_username: pooyanjamshidi
 github_username: pooyanjamshidi
