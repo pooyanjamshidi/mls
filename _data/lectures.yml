@@ -1,54 +1,54 @@
-- title: "Lecture 1 (Aug 22): Course Introduction: Machine Learning Systems"
+- title: "Lecture 1: Course Introduction: Machine Learning Systems"
   filename: mls00
   dirname: lectures
   tldr: "This lecture reviews course requirement, learning goals, policies, and expectations."
 
-- title: "Lecture 2 (Aug 27, 29): Introduction to Machine Learning Systems (Uber Case Study)"
+- title: "Lecture 2: Introduction to Machine Learning Systems (Uber Case Study)"
   filename: mls01
   dirname: lectures
   tldr: "This lecture reviews challenges of building a real-world ML system that scales."
   
-- title: "Lecture 3 (Sept 3): Machine Learning Systems: Challenges and Solutions"
+- title: "Lecture 3: Machine Learning Systems: Challenges and Solutions"
   filename: mls02
   dirname: lectures
   tldr: "This lecture reviews reactive strategies to incorporate ML-based components into a larger system."
 
-- title: "Lecture 4 (Sept 5, 10): Optimization and Neural Nets"
+- title: "Lecture 4: Optimization and Neural Nets"
   filename: optimization_dnn
   dirname: lectures
   tldr: "This lecture builds the foundation of optimization and deep learning."
 
-- title: "Lecture 5 (Sept 12): Learning Theory"
+- title: "Lecture 5: Learning Theory"
   filename: learning_theory
   dirname: lectures
   tldr: "This lecture reviews basic concepts related to statistical learning theory (e.g., hypothesis space)."
 
-- title: "Lecture 6 (Sept 24, 26): Deep Convolutional Neural Networks"
+- title: "Lecture 6: Deep Convolutional Neural Networks"
   filename: cnn
   dirname: lectures
   tldr: "This lecture builds the foundation of deep learning systems."
 
-- title: "Lecture 7 (Oct 3): Deep Learning System Stack"
+- title: "Lecture 7: Deep Learning System Stack"
   filename: DLSys
   dirname: lectures
   tldr: "This lecture reviews the full-stack deep learning system development."
 
-- title: "Lecture 8 (Oct 8): Backpropagation and Automatic Differentiation"
+- title: "Lecture 8: Backpropagation and Automatic Differentiation"
   filename: backprop
   dirname: lectures
   tldr: "This lecture reviews backprop and automatic differentiation."
 
-- title: "Lecture 8 (Oct 15-17): High-Performance Hardware for Deep Learning"
+- title: "Lecture 8: High-Performance Hardware for Deep Learning"
   filename: deephardware
   dirname: lectures
   tldr: "This lecture reviews hardware backends for deep learning."
 
-- title: "Lecture 9 (Oct 24-29-31, Nov 5-7): Optimization and Performance Understanding of ML Systems"
+- title: "Lecture 9: Optimization and Performance Understanding of ML Systems"
   filename: mlsysperf
   dirname: lectures
   tldr: "This lecture discusses performance optimization of machine learning systems."
 
-- title: "Lecture 10 (Nov 12): Compressing Deep Neural Networks: Pruning and Quantization"
+- title: "Lecture 10: Compressing Deep Neural Networks: Pruning and Quantization"
   filename: dnncompress
   dirname: lectures
   tldr: "This lecture discusses DNN model compression techniques."
