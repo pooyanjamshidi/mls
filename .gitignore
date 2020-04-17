@@ -1,5 +1,18 @@
+old/
+_site
+.DS_Store
+.jekyll
+.jekyll-metadata
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+package.json
+
 *.key
 *.pptx
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -22,7 +35,6 @@
 # *.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bib
 *.bbl
 *.bcf
 *.blg
