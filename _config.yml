@@ -1,5 +1,5 @@
 # Site settings
-title: ML Systems
+title: CSCE 585
 subtitle: Machine Learning Systems
 email: pjamshid@cse.sc.edu
 description: "When we talk about Artificial Intelligence (AI) in general and Machine Learning (ML) in particular, we typically refer to a technique or an algorithm that gives the computer systems the ability to learn and to reason with data. However, there is a lot more to AI/ML than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between AI/ML as a technique versus AI/ML as a system in production." 
