@@ -5,7 +5,7 @@
 \newcommand{\blankline}{\quad\pagebreak[2]}
 
 \title{CSCE 585 -- Machine Learning Systems}
-\author{Pooyan Jamshidi}
+\author{\href{https://pooyanjamshidi.github.io/}{Pooyan Jamshidi}}
 \date{Fall 2020}
 
 \usepackage[sc]{mathpazo}
@@ -30,7 +30,7 @@
 }
 
 
-
+\usepackage{footnote}
 \usepackage{setspace}
 \usepackage{multicol}
 %\usepackage{indentfirst}
@@ -51,8 +51,8 @@
 \usepackage{array,xcolor}
 \usepackage{color,hyperref}
 \hypersetup{colorlinks,breaklinks,
-            linkcolor=clemsonorange,urlcolor=blue,
-            anchorcolor=clemsonorange,citecolor=black}
+            linkcolor=blue,urlcolor=blue,
+            anchorcolor=red,citecolor=black}
 
 
 
@@ -67,11 +67,11 @@
 \begin{tabular*}{.93\textwidth}{@{\extracolsep{\fill}}lr}
 
 
-\href{https://pooyanjamshidi.github.io/mls/}{\tt\bf https://pooyanjamshidi.github.io/mls/}  & E-mail: \texttt{pjamshid@cse.sc.edu} \\
+Website: \href{https://pooyanjamshidi.github.io/mls/}{\tt\bf https://pooyanjamshidi.github.io/mls/}  & E-mail: \texttt{pjamshid@cse.sc.edu} \\
 
-Office Hours: by appointment  &  Class Hours: Recorded and Sync \\
+Office Hours: by appointment  &  Class Hours: Async \& Sync \\
 
-Office: Virtual & Class Room: Virtual \\
+Office: Virtual (Zoom) & Class Room: Blackboard Ultra \\
 &  \\
 
 \hline
@@ -80,38 +80,43 @@ Office: Virtual & Class Room: Virtual \\
 \vspace{10mm}
 
 \section*{Bulletin description}
-Design, implementation, troubleshooting, testing, and deploying machine learning systems at scale; Deep learning systems stack from design to compiler and hardware deployment; Research directions
+Design, implementation, testing, and deploying machine learning systems at scale; Deep learning systems stack from design to computer system and hardware; Research directions (Robust Optimization, Causal AI, AI/ML Systems in Space, Adversarial ML, AI Systems for Social Good, AI Systems for Diversity\&Inclusion, Safe AI, Transfer Learning, Deep Reinforcement Learning, Neuromorphic Computing).
 
 \section*{Prerequisites}
 CSCE 240 or 206.
 
 \section*{Course Description}
 
-When we talk about Machine Learning (ML) or Artificial Intelligence (AI), we typically refer to a technique or an algorithm that gives the computer systems the ability to learn and to reason with data. However, there is a lot more to ML/AI than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between ML/AI as a technique versus ML/AI as a system in production. A ML/AI system involves a significant number of components and it is important that they remain responsive in the face of failure and changes in load. This course covers several strategies to keep ML/AI systems responsive, resilient, and elastic. ML/AI systems are different than other computer systems when it comes to building, testing, deploying, delivering, and evolving. ML/AI systems also have unique challenges when we need to change the architecture or behavior of the system. Therefore, it is essential to learn how to deal with such unique challenges that only may happen when building real-world production-ready ML/AI systems (e.g., performance issues, memory leaking, communication issues, multi-GPU issues, etc). The focus of this course will be primarily on \emph{deep learning systems}, but the principles will remain similar across all ML/AI systems. More specifically, we will mainly target the following concerns:
+When we talk about Artificial Intelligence (AI) or Machine Learning (ML), we typically refer to a technique, a model, or an algorithm that gives the computer systems the ability to learn and to reason with data. However, there is a lot more to ML than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between AI/ML as a model versus AI/ML as a system in production. An ML system\footnote{We use AI Systems and ML Systems interchangeably} involves a significant number of components and it is important that they remain responsive in the face of failure and changes in load. This course covers several strategies to keep ML systems responsive, resilient, and elastic. ML systems are different from other computer systems when it comes to building, testing, deploying, delivering, and evolving. Machine learning systems also have unique challenges when we need to change the architecture or behavior of the system. Therefore, it is essential to learn how to deal with such unique challenges that only may happen when building real-world production-ready ML systems (e.g., performance issues, memory leaks, communication issues, multi-GPU issues, etc). The focus of this course will be primarily on \emph{deep learning systems}, but the principles will remain similar across all ML systems. 
+
+More specifically, this course is designed for the following audience:
 
 \begin{itemize}
 
-\item Data scientists often make great progress at building models with cutting edge techniques but turning those models into products is challenging. For example, data scientists may work with unversioned notebooks on static data sets and focus on prediction accuracy while ignoring scalability, robustness, update latency, or operating cost.
+\item \textbf{Computer Scientists, Data Scientists, AI/ML/Math/Statistics Researchers} often make great progress at building models with cutting edge techniques but turning those models into products is challenging. For example, data scientists may work with unversioned notebooks on static data sets and focus on prediction accuracy while ignoring scalability, robustness, update latency, or operational costs.
 
-\item Software engineers are trained with clear specifications and tend to focus on code, but may not be aware of the difficulties of working with data and unreliable models. They have a large toolset for decision making and quality assurance but it is not obvious how to apply those to intelligent systems and their challenges. To what degree can existing SE practices be used for building intelligent systems? To what degree are new practices needed?
+\item \textbf{Software Engineers} are trained with clear specifications and tend to focus on code, but may not be aware of the difficulties of working with data and unreliable models. They have a large toolset for decision making and quality assurance but it is not obvious how to apply those to intelligent systems and their challenges. 
+
+\item \textbf{Scientists, Researchers, Engineers, Lawyers, Medical Experts, Physicians, Psychologists, Business Experts, and many other Professionals} have heard about AI/ML and would like to know more about the details and how to start or use AI/ML in their profession or their research. It is important to learn how to design ML systems in a principled and systematic way that satisfies certain properties like safety, bias, etc. If we do not learn about these important principles, we may have many ML systems that undermine our human values in our society.
+
 \end{itemize}
 
-This course adopts a systems perspective on building intelligent systems, focusing on what a data scientist can do to turn a machine learning idea into a scalable and reliable product. We will also cover some core machine learning topics such as:
+\subsection*{Topics}
+
 \begin{itemize}
 \item Machine Learning Systems: Concepts, Challenges, and Solutions
+\item Machine Learning Systems and Software Stack
 \item Optimization, Neural Nets, and Learning Theory
-\item Deep Convolutional Neural Networks
-\item Deep Learning System Stack
 \item Backprop and Automatic Differentiation
-\item Hardware Backends: GPU, CPU, TPU
-\item Hardware and Memory Optimization
-\item Machine Learning Platforms and Model Serving
+\item Hardware for Machine Learning Systems: GPU, CPU, TPU, Neuromorphic Computing
+\item Machine Learning Accelerators (ML Compilers)
+\item In-memory Computation: Memory Locality and Memory Bandwidth
+\item Quantized and Low-precision Machine Learning
+\item Deployment and Low-latency Inference: Platforms and Model Serving
 \item Distributed and Scalable Machine Learning
-\item Troubleshooting Deep Neural Networks
-\item Machine Learning System Testing and Deployment at Scale 
-\item Setting up Machine Learning Projects and Teams 
-\item Highly-Configurable Machine Learning Systems and Transfer Learning
-\item Research Directions
+\item Machine Learning System Testing and Debugging at Scale 
+\item Setting up Machine Learning Projects and Teams
+\item Research Directions: Robust Optimization, Causal AI, AI/ML Systems in Space, Adversarial ML, AI Systems for Social Good, AI Systems for Diversity\&Inclusion, Safe AI, Transfer Learning, Deep Reinforcement Learning, Neuromorphic Computing.
 \end{itemize}
 
 %Rather than focusing on modeling and learning itself, it assumes a working relationship with a data scientist and focuses on issues of design, implementation, operation, and assurance and how those interact with the data scientist's modeling.
@@ -120,45 +125,49 @@ This course adopts a systems perspective on building intelligent systems, focusi
 
 \section*{Learning Outcomes}
 \begin{enumerate}
-\item Explaining differences between ML as predictive technique and as a computer system.
-\item Describing how a distributed ML system works in production and insight into challenges.
+\item Learning to design ML Systems to solve practical problems.
+\item Explaining differences between ML as a model and as a system deployed at scale.
+\item Describing how an ML system works in production and insights about challenges (AIOps).
 \item Locating technical debt in building ML systems.
-\item Employing design strategies and best practices to mitigate technical debt.
-\item Incorporating ML-based components into a larger system.
-\item Stating the principles that govern ML systems.
+\item Employing design strategies (such as concepts) and best practices to mitigate technical debt.
+\item Incorporating ML-based components into a larger system (e.g., Cyber-Physical Systems).
+\item Stating the underlying principles that govern ML systems.
 \item Building systems that are more capable, both as software and as predictive systems.
-\item Identifying systems issues and apply strategies to avoid them in production ML systems.
-\item Picking the right framework and compute infrastructure
-\item Troubleshooting training and ensuring reproducibility
-\item Deploying the model at scale
+\item Identifying systems faults and apply strategies to identify root causes in ML systems.
+\item Picking the right framework and compute infrastructure and trade-off space.
+\item Understanding performance landscape (energy, inference time) and optimization.
+\item Troubleshooting training and ensuring the reproducibility of results.
+\item Deploying the model on resource-constrained environments (e.g., NVIDIA Xavier)
 
 \end{enumerate}
 
 
-\section*{Why this course is required in modern computer science curriculum?}
+\section*{Why this course is important and should be required in the modern computer science curriculum?}
 
-In this course, we will understand central principles of \textbf{machine learning systems}. We will begin by reviewing common challenges and technical debt that may incur massive ongoing maintenance costs in real-world ML systems. We explore several ML-specific risk factors to account for in system design. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, configuration issues, changes in the external world, and a variety of system-level anti-patterns. We will review many different examples of real-world ML systems and the unique challenges one may encounter to integrate a research ML technique into a production-ready system. We will review unique challenges relevant to each component of an ML system from data collection, feature generation, model learning, model evaluation, model publishing, and acting on the real-world. 
+In this course, we will understand the central principles of \textbf{machine learning systems}. We will begin by reviewing common challenges and technical debt that may incur massive ongoing maintenance costs in real-world ML systems. We explore several ML-specific risk factors to account for in system design. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, configuration issues, changes in the external world, and a variety of system-level anti-patterns. We will review many different examples of real-world ML systems and the unique challenges one may encounter to integrate a research ML technique into a production-ready system. We will review unique challenges relevant to each component of an ML system from data collection, feature generation, model learning, model evaluation, model publishing, and acting on the real-world. 
 
-In this course, we will also study strategies and principles of distributed ML especially for handling big data in modern production systems. We will learn how to build distributed Deep Learning systems using computer systems best practices. We will study design solutions in ML systems to make them as reliable as a production-ready software system. We will also review design patterns to implement and coordinate ML subsystems. Using powerful frameworks such as Spark, MLlib, Clipper, and Akka, you will learn how to quickly and reliably move from a single machine to a massive cluster. We will then proceed how one can operate a large-scale ML system over time. We will employ the computer systems principles to build ML applications that are responsive, resilient, and elastic. In this course, students will gain hands-on experience applying systems principles to implement scalable learning pipelines. We will also cover various aspects of learning systems, including: automatic differentiation, distributed learning, and scalable model serving. We will finally review best practices of ML at scale in Uber, Spotify, Netflix. 
-
-
-\section*{Course Projects and Homeworks}
-
-For the course projects/homeworks, students will work on different aspects of ML systems. For more details, please refer to the following page: \url{https://pooyanjamshidi.github.io/mls/projects/}. There are materials for previous editions of this course.
+In this course, we will also study strategies and principles of distributed ML especially for handling big data in modern production systems. We will learn how to build distributed Deep Learning systems using computer systems best practices. We will study design solutions in ML systems to make them as reliable as a production-ready software system. We will also review design patterns to implement and coordinate ML subsystems. Using powerful frameworks such as Spark, MLlib, Clipper, and Akka, you will learn how to quickly and reliably move from a single machine to a massive cluster. We will then proceed with how one can operate a large-scale ML system over time. We will employ computer systems principles to build ML applications that are responsive, resilient, and elastic. In this course, students will gain hands-on experience applying systems principles to implement scalable learning pipelines. We will also cover various aspects of learning systems, including automatic differentiation, distributed learning, and scalable model serving. We will finally review best practices of ML at scale in Uber, Spotify, Netflix. And most importantly, this course will prepare students to take on jobs in companies that massively use ML such as Google, Facebook, Uber, and similar types. This course is also very much aligned for those who want to start doing research in some of the fascinating AI/ML topics we will cover in this course. Overall, I am hopeful that this course will have an impact (even very small) for our society, humanity, our future, and beyond.
 
 
-\section*{Readings and Textbooks}
+\section*{Course Projects}
 
-No textbook is required, here are some recommended materials for reading:
+CSCE 585 is a project-based course via which you learn how to build an ML System with certain characteristics. We will define a couple of project description, so students can choose to work on one of the projects related to ML Systems.
+There are materials for previous editions of this course on the course website, we will update this page soon with links to the project descriptions for this edition. For more details, please refer to the following page: \url{https://pooyanjamshidi.github.io/mls/projects/}. Announcements will be sent via Piazza once the project descriptions are available.
+
+
+\section*{Readings and Textbooks (Optional)}
+
+No textbook is required, here are some recommended materials for reading (all readings/materials comply with copyright/fair use policies):
 \begin{itemize}
-\item Hulten, Geoff. Building Intelligent Systems: A Guide to Machine Learning Engineering. Apress; 1st ed. edition (March 7, 2018). \url{http://intelligentsystem.io/book/}
-\item Deep Learning Book (\url{https://deeplearningbook.org}) is a comprehensive material for the field.
-\item CS231n (\url{http://cs231n.stanford.edu/}) is a great course to get started on DL for vision.
-\item Uber Engineering: \url{https://eng.uber.com/}
-\item The Netflix Tech Blog: \url{https://medium.com/netflix-techblog}
-\item Spotify Labs: \url{https://labs.spotify.com/}
+\item Hulten, Geoff. Building Intelligent Systems: A Guide to Machine Learning Engineering. Apress; 1st ed. edition (March 7, 2018): \url{http://intelligentsystem.io/book/}
+\item Deep Learning Book: \url{https://deeplearningbook.org}.
+% \item CS231n (\url{http://cs231n.stanford.edu/}) is a great course to get started on DL for vision.
+% \item Uber Engineering: \url{https://eng.uber.com/}
+% \item The Netflix Tech Blog: \url{https://medium.com/netflix-techblog}
+% \item Spotify Labs: \url{https://labs.spotify.com/}
 \end{itemize}
 
+\newpage
 
 \section*{Course Policy}
 
@@ -166,13 +175,24 @@ No textbook is required, here are some recommended materials for reading:
 We envision several routes of communication for this course:
 
 \begin{itemize}
-\item The main mode of electronic communication between students and TAs, as well as amongst students, will be through Piazza. It is intended for general questions about the course, clarifications about assignments, student questions to each other, discussions about material, and so on. 
+\item \textbf{Student-to-Instructor \& Student-to-Student:} The only mode of communication between students, instructor, and TA will be all electronically through the following tools/services:
+\begin{itemize}
+  \item \textbf{Blackboard Collaborate Ultra}: All sync lectures will be through Blackboard Collaborate Ultra (they will be also recorded) at the same time the class is scheduled. Note that we will not have sync lectures all weeks. We will only have the sync lectures whenever is needed for question answering, review, discussions, project presentations, and guest lectures and these will be communicated via Piazza. I will pre-record some short lectures for most of the content in the syllabus.
+  \item \textbf{Piazza}: It is intended for general questions about the course, clarifications about assignments, questions about research, discussions about the material, and so on. All students \emph{must} enroll in Piazza (the link can be found on the course website).
+  \item \textbf{GitHub}: We will use GitHub for all projects and their deliverable. We will create repositories to share the specification of each project and you should commit your code there. We will only look at it when you want us to do so and for the final evaluation. Note that all project deliverables should be a push to the repositories for final evaluation. Please do not email any project deliverable to us, they will be simply ignored. Learning GitHub is easy and the TA can show how to use it.
+  \item \textbf{Gradescope}: We will use GradeScope for all assignments. All students are required to make an account at Gradescope and enroll using this code that will be provided on the course website.
+  \item \textbf{Slack}: I will also set up a workspace for the course.
+  \item \textbf{Email}: I would strongly encourage you to ask your question via Piazza so others can also benefit from the questions and learn from the answers. However, if you need to contact the instructor for something that cannot be shared with others (personal issues or something confidential), you can email me or the TA with the provided address. Before sending an email, please think whether it is really necessary or can be shared on Piazza (it is great and you must use it regularly throughout the course).
+  \item \textbf{Zoom}: The instructor and TA will use Zoom for one-2-one meetings or the project team if needed. These are all by appointment.
+\end{itemize}
 
-\item If you need to contact the instructor, you should email with the provided address. 
+
+\item \textbf{Student-to-Content:} All course materials (e.g., lectures, notes, project descriptions, templates, assignments, syllabus, policies) can be accessed via this link: \url{https://pooyanjamshidi.github.io/mls/}. Note that I will update these materials throughout the semester, so to find out about the latest versions please regularly visit this link. I will announce any update of content via Piazza too.
+
 \end{itemize}
 
 % \subsection*{Attendance and class participation}
-% Attendance is essential for success in this course. We encourage all students to actively participate in class (by asking or answering questions, sharing experience, discussing project ideas, etc). Active participation will enhance your learning experience and that of the other students. There will be also some quizzes which are designed to emphasize a salient issue in the lecture of the day or in a previous lecture. Another purpose of quizzes is to take attendance. 
+% Attendance is essential for success in this course. We encourage all students to actively participate in class (by asking or answering questions, sharing experience, discussing project ideas, etc). Active participation will enhance your learning experience and that of the other students. There will be also some quizzes that are designed to emphasize a salient issue in the lecture of the day or in a previous lecture. Another purpose of quizzes is to take attendance. 
 
 \subsection*{Enrollment}
 
@@ -180,15 +200,15 @@ All CSE majors can enroll in this course. The same for other majors, but they ha
 
 \subsection*{Academic Integrity}
 
-I would encourage you to discuss or brainstorm with other students or professors about the assignments, projects and homeworks, but submissions should acknowledge all collaborators and sources consulted. We will actively check for code and other kinds of plagiarism (both from current classmates and other available online sources). We trust you all to submit your own work, and you are expected to practice the highest possible standards of academic integrity. Any deviation from this expectation will result in a minimum academic penalty of your failing the assignment, and will result in additional disciplinary measures including referring you to the Office of Academic Integrity. Violations of the University's Honor Code include, but are not limited to, plagiarism, cheating, falsification, complicity, and any other form of academic misrepresentation. For more information, see \url{https://www.sa.sc.edu/academicintegrity/}.
+I would encourage you to discuss or brainstorm with other students or lecturers/TA about the assignments and projects, but submissions should acknowledge all collaborators and sources consulted. We will actively check for code and other kinds of plagiarism (both from current classmates and other available online sources). We trust you all to submit your own work, and you are expected to practice the highest possible standards of academic integrity. Any deviation from this expectation will result in a minimum academic penalty of your failing the assignment and will result in additional disciplinary measures including referring you to the Office of Academic Integrity. Violations of the University's Honor Code include, but are not limited to, plagiarism, cheating, falsification, complicity, and any other form of academic misrepresentation. For more information, see \url{https://www.sa.sc.edu/academicintegrity/}.
 
 \subsection*{Disabilities Policy}
 
-Reasonable accommodations are available for students with a documented disability. If you have a disability and may need accommodations to fully participate in this class, contact the Office of Student Disability Services: 777-6142, TDD 777-6744, email sasds@mailbox.sc.edu, or stop by LeConte College Room 112A. All accommodations must be approved through the Office of Student Disability Services.
+Reasonable accommodations are available for students with a documented disability. If you have a disability and may need accommodations to fully participate in this class, contact the Student Disability Resource Center:  803-777-6142, TDD 803-777-6744, email sadrc@mailbox.sc.edu, or stop by LeConte College Room 112A. All accommodations must be approved through the Student Disability Resource Center. See \url{https://www.sa.sc.edu/sds/}.
 
 \subsection*{Late Work}
 
-Homework assignments are due at the time listed on Dropbox.  No late work will be accepted. Submitting all assignments is a necessary condition for passing this class.
+All assignments and projects have due dates. No late work will be accepted. Submitting all assignments and the project is a necessary condition for passing this class.
 
 \subsection*{Syllabus Change Policy}
 
@@ -196,37 +216,36 @@ This syllabus is a guide and every attempt is made to provide an accurate overvi
 
 \subsection*{Policies and Procedures}
 
-This section contains some general rules that will be enforced during this course. Please review these guidelines carefully. The course is governed by the policies and procedures of the university (http://www.sc.edu/policies/ppm/staf625.pdf). Violations of this code can result in actions varying from a failing grade to expulsion from the university.
+This section contains some general rules that will be enforced during this course. Please review these guidelines carefully. The course is governed by the policies and procedures of the university (\url{http://www.sc.edu/policies/ppm/staf625.pdf}). Violations of this code will be reported.
 
 
 \newpage
 
 \subsection*{Grading Policy (undergraduate students only)}
 \begin{itemize}
-  \item \underline{\textbf{10\%}} of your grade will be determined by your attendance and participation in class. Generally, ask questions and answer them.
-
-  \item \underline{\textbf{60\%}} of your grade will be determined by the course project. There will be only one project per team of students which will be formed in the first 3 weeks. Each team will be working on their own project throughout the semester and they will present/demo their work at the end of semester. The grade will be per student depending on her/his contribution to the project, progress throughout the semester, and the quality of the final presentation.
-
-  \item \underline{\textbf{30\%}} of your grade will be determined by homeworks throughout the semester. Homeworks are assignments that need to be delivered in 1-2 weeks, so students do these assignments regularly throughout the semester.
+   \item \textbf{Course Project}: \underline{\textbf{70\%}} of your grade will be determined by the course project. There will be only one project per team of students (we will discuss how to form a team in the first lecture), which must be formed in the first 3 weeks. I will provide details about the project specification int he first 3 weeks. Students will present their progress throughout the semester. The grade will be per student depending on her/his contribution to the project, regular progress throughout the semester, and the quality of the final presentation, results, and delivered prototype. 
+\begin{itemize}
+   \item Optional (encouraged): In addition to writing code and presenting the results of the projects, undergraduate students may write a report (that can be submitted as a workshop paper), see details here: \url{https://pooyanjamshidi.github.io/mls/projects/}. We will discuss more details about the projects in early lectures.
+\end{itemize}
+  \item \textbf{Assignments}: \underline{\textbf{30\%}} of your grade will be determined by assignments throughout the semester. Assignments will be very much aligned to the projects and they need to be delivered in 1-2 weeks, so students do these assignments regularly throughout the semester.
 
 \end{itemize}
 
 \subsection*{Grading Policy (graduate students only)}
 
 \begin{itemize}
-  \item \underline{\textbf{10\%}} of your grade will be determined by your attendance and participation in class. Generally, ask questions and answer them.
+  % \item \underline{\textbf{10\%}} of your grade will be determined by your attendance and participation in class. Generally, ask questions and answer them.
 
-  \item \underline{\textbf{40\%}} of your grade will be determined by the course project. There will be only one project per team of students which will be formed in the first 3 weeks. Each team will be working on their own project throughout the semester and they will present/demo their work at the end of semester. The grade will be per student depending on her/his contribution to the project, progress throughout the semester, and the quality of the final presentation.
+  \item \textbf{Course Project}: \underline{\textbf{70\%}} of your grade will be determined by the course project. There will be only one project per team of students (we will discuss how to form a team in the first lecture), which must be formed in the first 3 weeks. I will provide details about the project specification int he first 3 weeks. Students will present their progress throughout the semester. The grade will be per student depending on her/his contribution to the project, regular progress throughout the semester, and the quality of the final presentation, results, and delivered prototype. In addition to writing code and presenting the results of the projects, as I expect for all students, \emph{graduate students} are required to write a report (that can be submitted as a workshop paper), see details here: \url{https://pooyanjamshidi.github.io/mls/projects/}. We will discuss more details about the projects in early lectures.
 
-  \item \underline{\textbf{20\%}} of your grade will be determined by the project report. In addition to writing code and presenting the results of projects, as I expect for all students, graduate students are required to write a report, see details here: \url{https://pooyanjamshidi.github.io/mls/projects/}. 
+  \item \textbf{Assignments}: \underline{\textbf{30\%}} of your grade will be determined by assignments throughout the semester. Assignments will be very much aligned to the projects and they need to be delivered in 1-2 weeks, so students do these assignments regularly throughout the semester.
 
-  \item \underline{\textbf{30\%}} of your grade will be determined by homeworks throughout the semester. Homeworks are assignments that need to be delivered in 1-2 weeks, so students do these assignments regularly throughout the semester.
-
+  % \item \underline{\textbf{10\%}} of your grade will be determined by the project report. In addition to writing code and presenting the results of projects, as I expect for all students, graduate students are required to write a report, see details here: \url{https://pooyanjamshidi.github.io/mls/projects/}. 
 
 \end{itemize}
 
 
-Grades are on the following fixed scale:
+Grades are on the following \textbf{fixed scale}:
 
 \begin{tabular}{lr}
 A & [90 -- 100] \\
@@ -244,23 +263,25 @@ F & [0 -- 40)\\
 \newpage
 
 \section*{Course Schedule}
-\url{https://pooyanjamshidi.github.io/mls/lectures/}
+We will have some very exciting \textbf{guest lectures} from very known researchers in the areas of AI/ML/Systems on the following topics: Robust Optimization, Causal AI, AI/ML Systems in Space, Adversarial ML, AI Systems for Social Good, AI Systems for Diversity\&Inclusion, Safe AI, Transfer Learning, Deep Reinforcement Learning, Neuromorphic Computing. The exact schedule for guest lectures is tentative and is subject to change. For details about the lectures, please refer to (will be updated throughout the semester): \url{https://pooyanjamshidi.github.io/mls/lectures/}
+
 
 \begin{itemize}
-\item Week 1: Machine Learning Systems: Concepts, Challenges, and Solutions
-\item Week 2: Optimization, Neural Nets, and Learning Theory
-\item Week 3: Deep Convolutional Neural Networks
-\item Week 4: Deep Learning System Stack
-\item Week 5: Backprop and Automatic Differentiation
-\item Week 6: Hardware Backends: GPU, CPU, TPU
-\item Week 7: Hardware and Memory Optimization
-\item Week 8: Machine Learning Platforms and Model Serving
-\item Week 9: Distributed and Scalable Machine Learning
-\item Week 10: Troubleshooting Deep Neural Networks
-\item Week 11: Machine Learning System Testing and Deployment at Scale 
-\item Week 12: Setting up Machine Learning Projects and Teams 
-\item Week 13: Highly-Configurable Machine Learning Systems and Transfer Learning
-\item Week 14: Research Directions
+\item \textbf{Week 1:} Machine Learning Systems Design: Concepts, Challenges, and Solutions
+\item \textbf{Week 2:} Machine Learning Systems and Software Stack
+\item \textbf{Week 3:} Optimization, Neural Nets, and Learning Theory
+\item \textbf{Week 4:} Backprop and Automatic Differentiation
+\item \textbf{Week 5:} Research Directions (Guest Lectures)
+\item \textbf{Week 6:} Hardware for Machine Learning Systems: GPU, CPU, TPU, Neuromorphic
+\item \textbf{Week 7:} Machine Learning Accelerators (ML Compilers)
+\item \textbf{Week 8:} In-memory Computation: Memory Locality and Memory Bandwidth
+\item \textbf{Week 9:} Research Directions (Guest Lectures)
+\item \textbf{Week 10:} Quantized and Low-precision Machine Learning
+\item \textbf{Week 11:} Deployment and Low-latency Inference: Platforms and Model Serving
+\item \textbf{Week 12:} Distributed and Scalable Machine Learning
+\item \textbf{Week 13:} Machine Learning System Testing and Debugging at Scale
+\item \textbf{Week 14:} Setting up Machine Learning Projects and Teams 
+\item \textbf{Week 15:} Research Directions (Guest Lectures)
 \end{itemize}
 
 \end{document}
