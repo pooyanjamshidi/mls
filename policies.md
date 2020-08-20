@@ -4,11 +4,11 @@ title: Policies
 permalink: /policies/
 ---
 
-Hello, I hope you are excited about CSCE 585: ML Systems as I am!
+Hello, I hope you are as excited as I am about CSCE 585: ML Systems course!
 
 ## Course Syllabus
 
-First, please read the [Course Syllabus](https://pooyanjamshidi.github.io/mls/syllabus/mls-585.pdf) very carefully.
+First, please read the [Course Syllabus](https://pooyanjamshidi.github.io/mls/syllabus/CSCE585-MLSystems.pdf) very carefully.
 
 ## Prerequisites
 
@@ -57,7 +57,7 @@ Reasonable accommodations are available for students with a documented disabilit
 
 ## Grading
 
-Please consult with [Syllabus](https://pooyanjamshidi.github.io/mls/syllabus/mls-585.pdf).
+Please consult with [Syllabus](https://pooyanjamshidi.github.io/mls/syllabus/CSCE585-MLSystems.pdf).
 
 <!-- ## Regrading policy
 
