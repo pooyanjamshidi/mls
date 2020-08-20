@@ -45,8 +45,8 @@ permalink: /lectures/
 - Nov. 22 (Thanksgiving)
 - Nov. 29 (I will be at Machine Learning for DevOps [Summit](https://www.re-work.co/events/machine-learning-for-devops-summit-2018)) -->
 
-**Timeline** for your course projects:
+<!-- **Timeline** for your course projects:
 - Project Proposal: September 12
 - Project Milestone: October 17
 - Posters: November 28 
-- Final Report: December 3
+- Final Report: December 3 -->
