@@ -3,6 +3,11 @@
   dirname: lectures
   tldr: "This lecture reviews course requirement, learning goals, policies, and expectations."
 
+- title: "Lecture 2: Designing Computer Systems for Machine Learning"
+  filename: designing-mls
+  dirname: lectures
+  tldr: "This lecture reviews challenges of building a real-world ML system that scales."
+
 - title: "Lecture 2: Introduction to Machine Learning Systems (Uber Case Study)"
   filename: mls01
   dirname: lectures
