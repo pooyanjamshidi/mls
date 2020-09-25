@@ -18,6 +18,11 @@
   dirname: lectures
   tldr: "This lecture is about optimization techniques to train models and build deep nerual networks from multi-class logistic regression models."
 
+- title: "Lecture 5: Learning: Naïve Bayes"
+  filename: csce585-naivebayes
+  dirname: lectures
+  tldr: "This lecture is about simple classifiers based on Bayes Nets with (naive) independence assumptions between features."
+
 - title: "Introduction to Machine Learning Systems (Uber Case Study)"
   filename: mls01
   dirname: lectures
