@@ -5,6 +5,12 @@ permalink: /projects/
 ---
 
 
+## Topics [2020]
+
+All details about the course project can be found at [Project Athena](https://github.com/csce585-mlsystems/project-athena)
+
+
+## Topics [2018 and 2019]
 
 <ul id="archive">
 {% for projects in site.data.projects %}

@@ -23,6 +23,11 @@
   dirname: lectures
   tldr: "This lecture is about simple classifiers based on Bayes Nets with (naive) independence assumptions between features."
 
+- title: "Lecture 6: Machine Learning System Stack"
+  filename: csce585-dlsysstack
+  dirname: lectures
+  tldr: "This lecture reviews the full-stack machine learning system development."
+
 - title: "Introduction to Machine Learning Systems (Uber Case Study)"
   filename: mls01
   dirname: lectures
@@ -47,11 +52,6 @@
   filename: cnn
   dirname: lectures
   tldr: "This lecture builds the foundation of deep learning systems."
-
-- title: "Deep Learning System Stack"
-  filename: DLSys
-  dirname: lectures
-  tldr: "This lecture reviews the full-stack deep learning system development."
 
 - title: "Backpropagation and Automatic Differentiation"
   filename: backprop

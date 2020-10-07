@@ -16,7 +16,7 @@ leadimage: mls-logo.jpg
 leadimage_description: "New to machine learning? Not sure how ML works in production? You're welcome to follow and learn from this graduate-level course."
 authorurl: "https://pooyanjamshidi.github.io"
 syllabus: "https://github.com/pooyanjamshidi/mls/blob/master/syllabus/mls.pdf"
-githublink: "https://github.com/pooyanjamshidi/mls"
+githublink: "https://github.com/csce585-mlsystems"
 
 # Build settings
 markdown: kramdown
