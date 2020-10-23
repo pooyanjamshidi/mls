@@ -28,6 +28,11 @@
   dirname: lectures
   tldr: "This lecture reviews the full-stack machine learning system development."
 
+- title: "Lecture 7: Convolutional Neural Networks (CNNs/ConvNets)"
+  filename: csce585-cnn
+  dirname: lectures
+  tldr: "This lecture reviews the foundation, mathematical operations, the architecture of CNNs, and contrasts it with dense networks in DNNs."
+
 - title: "Introduction to Machine Learning Systems (Uber Case Study)"
   filename: mls01
   dirname: lectures
@@ -38,20 +43,10 @@
   dirname: lectures
   tldr: "This lecture reviews reactive strategies to incorporate ML-based components into a larger system."
 
-- title: "Optimization and Neural Nets"
-  filename: optimization_dnn
-  dirname: lectures
-  tldr: "This lecture builds the foundation of optimization and deep learning."
-
 - title: "Learning Theory"
   filename: learning_theory
   dirname: lectures
   tldr: "This lecture reviews basic concepts related to statistical learning theory (e.g., hypothesis space)."
-
-- title: "Deep Convolutional Neural Networks"
-  filename: cnn
-  dirname: lectures
-  tldr: "This lecture builds the foundation of deep learning systems."
 
 - title: "Backpropagation and Automatic Differentiation"
   filename: backprop
