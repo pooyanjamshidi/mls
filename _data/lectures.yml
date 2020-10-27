@@ -33,6 +33,11 @@
   dirname: lectures
   tldr: "This lecture reviews the foundation, mathematical operations, the architecture of CNNs, and contrasts it with dense networks in DNNs."
 
+- title: "Lecture 8: Hardware for Machine Learning Systems"
+  filename: csce585-ml-hardware
+  dirname: lectures
+  tldr: "This lecture reviews hardware layer of machine learning (deep learning) systems."
+
 - title: "Introduction to Machine Learning Systems (Uber Case Study)"
   filename: mls01
   dirname: lectures
@@ -52,11 +57,6 @@
   filename: backprop
   dirname: lectures
   tldr: "This lecture reviews backprop and automatic differentiation."
-
-- title: "High-Performance Hardware for Deep Learning"
-  filename: deephardware
-  dirname: lectures
-  tldr: "This lecture reviews hardware backends for deep learning."
 
 - title: "Optimization and Performance Understanding of ML Systems"
   filename: mlsysperf
