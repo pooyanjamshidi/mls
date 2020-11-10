@@ -38,6 +38,11 @@
   dirname: lectures
   tldr: "This lecture reviews hardware layer of machine learning (deep learning) systems."
 
+- title: "Lecture 9: Model Compression: Pruning and Quantization"
+  filename: csce585-model-compression
+  dirname: lectures
+  tldr: "This lecture discusses the key ideas behind DNN model compression techniques."
+
 - title: "Introduction to Machine Learning Systems (Uber Case Study)"
   filename: mls01
   dirname: lectures
@@ -62,11 +67,6 @@
   filename: mlsysperf
   dirname: lectures
   tldr: "This lecture discusses performance optimization of machine learning systems."
-
-- title: "Compressing Deep Neural Networks: Pruning and Quantization"
-  filename: dnncompress
-  dirname: lectures
-  tldr: "This lecture discusses DNN model compression techniques."
 
 - title: "Machine Learning Platforms"
   filename: mls03
