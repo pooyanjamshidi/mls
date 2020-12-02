@@ -43,6 +43,11 @@
   dirname: lectures
   tldr: "This lecture discusses the key ideas behind DNN model compression techniques."
 
+- title: "Lecture 10: Performance Tradeoff in Machine Learning Systems"
+  filename: csce585-performance-tradeoff
+  dirname: lectures
+  tldr: "This lecture discusses several research directions (multi-objective optimization, transfer learning, causal inference) in ML Systems."
+
 - title: "Introduction to Machine Learning Systems (Uber Case Study)"
   filename: mls01
   dirname: lectures
@@ -92,8 +97,3 @@
   filename: mls07
   dirname: lectures
   tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
-
-- title: "Transfer Learning"
-  filename: mls08
-  dirname: lectures
-  tldr: "This lecture discusses transfer learning to enable understanding performance of machine learning systems."
