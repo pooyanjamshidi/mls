@@ -1,10 +1,10 @@
 - title: "Lecture 1: Course Introduction: Machine Learning Systems"
-  filename: csce585-course-intro
+  filename: csce585-2021-designing-mlsys
   dirname: lectures
   tldr: "This lecture reviews course requirement, learning goals, policies, and expectations."
 
 - title: "Lecture 2: Designing Computer Systems for Machine Learning"
-  filename: csce585-designing-mls
+  filename: csce585-2021-designing-mlsys
   dirname: lectures
   tldr: "This lecture reviews challenges and principled solutions for building real-world ML systems in production."
 

@@ -5,7 +5,7 @@ email: pjamshid@cse.sc.edu
 description: "When we talk about Artificial Intelligence (AI) or Machine Learning (ML), we typically refer to a technique, a model, or an algorithm that gives the computer systems the ability to learn and to reason with data. However, there is a lot more to ML than just implementing an algorithm or a technique. In this course, we will learn the fundamental differences between AI/ML as a model versus AI/ML as a system in production." 
 learning_goals: "By the end of this class, I hope: (i) you will be able to apply state of the art ML algorithms in whatever problem you are interested in at scale and learn how to deal with unique challenges that only may happen when building real-world production-ready AI/ML systems; (ii) I also hope I can convey my own excitement about AI/ML systems to you, and (iii) by the conclusion of this class you are well qualified for doing research in AI/ML systems research."
 office_hours: "By Appointment"
-piazzaurl: "https://piazza.com/sc/fall2020/csce585/home"
+piazzaurl: "https://piazza.com/sc/fall2021/csce585/home"
 
 
 baseurl: "/mls" # the subpath of your site, e.g. /blog/
