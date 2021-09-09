@@ -4,6 +4,17 @@ title: Projects
 permalink: /projects/
 ---
 
+## Topics [2021]
+
+The course project is an opportunity for you to apply what you have learned in class to a problem of your interest. Potential projects must have these two components:
+- `Machine Learning` algorithm: Any ML model class including neural networks or any good old-fashioned ML/AI.
+- `Computer Systems`: The project should have at least one computer systems component: (i) Platform: Embedded, Realtime, Cloud, IoT, Edge; (ii) Systems issues such as scalability, performance, reliability; (iii) On-device ML: e.g., TinyML, AI on Edge; (iv) Trustworthy AI: Bias, Fairness, Robustness, Privacy, Explainability, Interpretability, Interoperability; (v) Robot learning, any project that makes robots more intelligent! 
+
+The following categories also fit within the scope and I highly encourage students to consider such projects: 
+* Extending an existing ML systems that you can find on GitHub, e.g., [DeepStream](https://developer.nvidia.com/deepstream-sdk)
+* Hackathons and Competitions, e.g., [PyTorch Annual Hackathon 2021](https://pytorch2021.devpost.com/), [AWS BugBust](https://aws.amazon.com/bugbust/)
+
+If you are unsure whether the project you have defined fits within the scope, please come and talk with me after class. If you believe that might be helpful for other students, please ask your question on Piazza or during class hours.
 
 ## Topics [2020]
 
@@ -27,11 +38,31 @@ All details about the course project can be found at [Project Athena](https://gi
 </ul>
 
 
-## Final Report
+## Project Proposal [1 page]
+
+* What is the **problem** that you will be investigating? Why is it interesting? 
+* What **reading** will you examine to provide context and background? 
+* What **data** will you use? If you are collecting new data, how will you do it? 
+* What **method** or algorithm are you proposing? If there are existing implementations, will you use them and how? How do you plan to improve or modify such implementations? You don't have to have an exact answer at this point, but you should have a general sense of how you will approach the problem you are working on. 
+* How will you **evaluate** your results? Qualitatively, what kind of results do you expect (e.g. plots or figures)? Quantitatively, what kind of analysis will you use to evaluate and/or compare your results (e.g. what performance metrics or statistical tests)?
+
+**Submission**: Please submit your proposal as a PDF on the college [dropbox](https://dropbox.cse.sc.edu/). **Only one person on your team should submit**. Please have this person add the rest of your team in the author list.
+
+## Project Milestone [2-3 pages]
+
+Your project milestone report should be between 2-3 pages using the provided template. The following is a suggested structure for your report:
+
+- `Title, Author(s)`
+- `Introduction`: this section introduces your problem, and the overall plan for approaching your problem
+- `Problem statement`: Describe your problem precisely specifying the dataset to be used, expected results and evaluation
+- `Technical Approach`: Describe the methods you intend to apply to solve the given problem
+- `Intermediate/Preliminary Results`: State and evaluate your results up to the milestone
+
+**Submission**: Please submit your milestone as a PDF on Gradescope. **Only one person on your team should submit**. Please have this person add the rest of your team in the author list.
+
+## Final Report [6-8 pages]
 
 Each group needs to write a project report (in addition to the IPython notebook, their content could overlap) of at least four-pages, not including references. 
-
-## Guideline
 
 The project report should be formatted similarly to a workshop paper, and should use the [ICML 2018 style](https://icml.cc/Conferences/2018/StyleAuthorInstructions).
 I will post all the final reports online so that you can read about each others' work. If you do not want your writeup to be posted online, then please let me know at least a week in advance of the final writeup submission deadline.
