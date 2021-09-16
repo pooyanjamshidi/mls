@@ -8,11 +8,12 @@ permalink: /projects/
 
 The course project is an opportunity for you to apply what you have learned in class to a problem of your interest. Potential projects must have these two components:
 - `Machine Learning` algorithm: Any ML model class including neural networks or any good old-fashioned ML/AI.
-- `Computer Systems`: The project should have at least one computer systems component: (i) Platform: Embedded, Realtime, Cloud, IoT, Edge; (ii) Systems issues such as scalability, performance, reliability; (iii) On-device ML: e.g., TinyML, AI on Edge; (iv) Trustworthy AI: Bias, Fairness, Robustness, Privacy, Security, Explainability, Interpretability, Interoperability; (v) Robot learning, any project that makes robots more intelligent! 
+- `Computer Systems`: The project should have at least one computer systems component: (i) Platform: Embedded, Realtime, Cloud, IoT, Edge; (ii) Systems issues such as scalability, performance, reliability; (iii) On-device ML: e.g., TinyML, AI on Edge; (iv) Trustworthy AI: Bias, Fairness, Robustness, Privacy, Security, Explainability, Interpretability, Interoperability; (v) Robot Learning, any project that makes robots more intelligent! 
 
 The following categories also fit within the scope and I highly encourage students to consider such projects: 
 * Building on top of an existing ML systems that you can find on GitHub, e.g., you can develop a tracking algorithm and develop a plugin for [DeepStream](https://developer.nvidia.com/deepstream-sdk)
-* Hackathons and Competitions, e.g., [PyTorch Annual Hackathon 2021](https://pytorch2021.devpost.com/), [AWS BugBust](https://aws.amazon.com/bugbust/), [Kaggle](https://www.kaggle.com/competitions)
+* AI competitions and challenge problems, e.g., [EvalAI](https://eval.ai/) hosts many interesting competitions with prizes.
+* Hackathons, e.g., [PyTorch Annual Hackathon 2021](https://pytorch2021.devpost.com/), [AWS BugBust](https://aws.amazon.com/bugbust/), [Kaggle](https://www.kaggle.com/competitions)
 * Systematic study of open source ML Systems via: (i) interview study (please make sure you design the interview study correctly before conducting the interviews) and/or (ii) Formulating interesting research questions about building ML systems, for example, contrasting testing practices for ML systems vs traditional software systems, collecting data from software repositories, and systematically extracting info from these repositories that answers your research questions.
 * TinyML projects, you can find many ideas on [GitHub](https://github.com/gigwegbe/tinyml-papers-and-projects) and [TinyML community forum](https://discuss.tinymlx.org/c/projects/5)
 * And, in general, any interesting ML systems project ideas, try [GitHub](https://github.com/NirantK/awesome-project-ideas), [Reddit](https://www.reddit.com/r/MachineLearning/search/?q=systems&restrict_sr=1)
