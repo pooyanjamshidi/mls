@@ -4,6 +4,11 @@ title: Projects
 permalink: /projects/
 ---
 
+## Coursework Template
+
+Please use this [template](https://github.com/pooyanjamshidi/mls/blob/master/resources/coursework-template.zip) for submitting your written assignments.
+
+
 ## Topics [2021]
 
 The course project is an opportunity for you to apply what you have learned in class to a problem of your interest. Potential projects must have these two components:
@@ -19,28 +24,6 @@ The following categories also fit within the scope and I highly encourage studen
 * And, in general, any interesting ML systems project ideas, try [GitHub](https://github.com/NirantK/awesome-project-ideas), [Reddit](https://www.reddit.com/r/MachineLearning/search/?q=systems&restrict_sr=1)
 
 If you are unsure whether the project you have defined fits within the scope, please come and talk with me after class. If you believe that might be helpful for other students, please ask your question on Piazza or during class hours.
-
-## Topics [2020]
-
-All details about the course project can be found at [Project Athena](https://github.com/csce585-mlsystems/project-athena)
-
-
-## Topics [2018 and 2019]
-
-<ul id="archive">
-{% for projects in site.data.projects %}
-      <li class="archiveposturl">
-        <span><a href="{{ site.url }}/{{ projects.dirname }}/{{ projects.filename }}.pdf">{{ projects.title }}</a></span><br>
-<span class = "postlower">
-<strong>tl;dr:</strong> {{ projects.tldr }}</span>
-<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right">
-	<a href="{{ site.githublink}}/tree/master/{{ projects.dirname }}"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
-<a href="{{ site.githublink}}/blob/master/{{ projects.dirname }}/{{ projects.filename }}.pdf"><i class="fas fa-file-pdf"></i></a>
-</strong> 
-      </li>
-{% endfor %}
-</ul>
-
 
 ## Project Proposal [1 page]
 
@@ -97,3 +80,23 @@ Project reports - CSCE 790 - Fall 2018:
 - [`Project1: Hassan Alamri, Yang Ren, Rui Xin`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project1.pdf)
 - [`Project3: Joshi Bharat, Harrison Howell, Jianhai Su`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project3.pdf)
 
+## Topics [2020]
+
+All details about the course project can be found at [Project Athena](https://github.com/csce585-mlsystems/project-athena)
+
+
+## Topics [2018 and 2019]
+
+<ul id="archive">
+{% for projects in site.data.projects %}
+      <li class="archiveposturl">
+        <span><a href="{{ site.url }}/{{ projects.dirname }}/{{ projects.filename }}.pdf">{{ projects.title }}</a></span><br>
+<span class = "postlower">
+<strong>tl;dr:</strong> {{ projects.tldr }}</span>
+<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right">
+      <a href="{{ site.githublink}}/tree/master/{{ projects.dirname }}"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+<a href="{{ site.githublink}}/blob/master/{{ projects.dirname }}/{{ projects.filename }}.pdf"><i class="fas fa-file-pdf"></i></a>
+</strong> 
+      </li>
+{% endfor %}
+</ul>

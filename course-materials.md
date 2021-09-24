@@ -16,6 +16,9 @@ No textbook is required, here are some recommended materials for reading:
 
 * Ian Goodfellow and Yoshua Bengio and Aaron Courville, [Deep Learning](https://deeplearningbook.org), MIT Press, 2016.
 
+## Related ML Systems Talks
+I highly encourage students to watch the talks at [Stanford MLSys Seminar Series](https://mlsys.stanford.edu/).
+
 <!-- Jeff Smith (2018). [*Machine Learning Systems: Designs that scale*](https://www.manning.com/books/machine-learning-systems). Manning Publications. -->
 <!-- 
 ## Additional Course Materials
