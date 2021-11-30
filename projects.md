@@ -80,6 +80,19 @@ Project reports - CSCE 790 - Fall 2018:
 - [`Project1: Hassan Alamri, Yang Ren, Rui Xin`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project1.pdf)
 - [`Project3: Joshi Bharat, Harrison Howell, Jianhai Su`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project3.pdf)
 
+## Project Presentation (video recording)
+* **Goal**: We will use video recording as the way for groups to present and share their project.
+
+Each group is required to submit a 5-minute presentation video for their final project. Students can be as creative as they like for their video presentations. The easiest option is to create a slide deck together as a team and record yourselves presenting the slide deck as a group using zoom. Each student member should speak during the presentation. Also, we prefer if students use webcam, so we can see you in the video recordings.
+
+The following is a suggested structure for the video presentation. You don't necessarily have to organize your presentation using these sections in this order, but that would likely be a good starting point for most projects.
+
+* **Problem Statement**: Briefly describe the problem your group is tackling. Describe the overall motivation, as well as the input / output of the problem.
+* **Technical Challenges**: Briefly describe why the problem is technically challenging.
+* **Related Works**: Briefly in what ways previous works have tackled the technical challenges.
+* **Your Approach and Results**: Describe your detailed technical approach and innovations. Describe evaluation results (dataset and metric). Emphesize on important, interesting, or unexpected results, but also explain the expected results, comparing with previously reported results.
+* **Broader Impact**: How do you expect the impact of your work to be? What can others learn from it or how can they apply it to solve their problems? What are the limitations of your work? What are areas for future improvements?
+
 ## Topics [2020]
 
 All details about the course project can be found at [Project Athena](https://github.com/csce585-mlsystems/project-athena)
