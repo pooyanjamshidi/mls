@@ -81,9 +81,7 @@ Project reports - CSCE 790 - Fall 2018:
 - [`Project3: Joshi Bharat, Harrison Howell, Jianhai Su`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project3.pdf)
 
 ## Project Presentation (videorecording)
-* **Goal**: We will use video recording for groups to present and share their project.
-
-Each group must submit a 5-minute presentation video for their final project. Students can be as creative as they like for their video presentations. The easiest option is to create a slide deck together as a team and record yourselves presenting the slide deck as a group using zoom. Each student member should speak during the presentation. Also, we prefer if students use a webcam to see you in the video recordings.
+We will use video recording for groups to present and share their project. Each group must submit a 5-minute presentation video for their final project. Students can be as creative as they like for their video presentations. The easiest option is to create a slide deck together as a team and record yourselves presenting the slide deck as a group using zoom. Each student member should speak during the presentation. Also, we prefer if students use a webcam to see you in the video recordings.
 
 The following is a suggested structure for the video presentation. You don't necessarily have to organize your presentation using these sections in this order, but that would likely be a good starting point for most projects.
 
@@ -94,12 +92,15 @@ The following is a suggested structure for the video presentation. You don't nec
 * **Broader Impact**: How do you expect the impact of your work to be? What can others learn from it, or how can they apply it to solve their problems? What are the limitations of your work? What are areas for future improvements?
 
 
-### What and How to Submit Final Materials:
+## What and How to Submit Final Materials:
 1. **Project Report:** in PDF format using the template above. This PDF file is the only file you need to submit, all other items should be hosted somewhere as described below, and you only put the links into your report.
 2. **Code:** put the GitHub or GitLab link in your report. Please make sure the repository is public, and you put all materials, including all code, scripts, tutorials, everything that one requires to replicate the results in your report.
 3. **Data:** Including training dataset, testing dataset, metadata, and more importantly, all experimental data, logs that you have collected during your experiments, everything that one requires to replicate the results.
 4. **Project Presentation:** you can use Keynote or PowerPoint to prepare the slides and convert them to PDF. You can publish your presentation on SlideShare/SpeakerDeck and put the link in your report. If you prefer, you can push the PDF into your git repository.
 5. **Video Recording:** You are encouraged to use YouTube to publish your presentation; you then put the link of the video recording in the report.
+
+
+---------------------------------------
 
 ## Topics [2020]
 
