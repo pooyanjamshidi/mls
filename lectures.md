@@ -32,11 +32,13 @@ Tutorials are available on [GitHub](https://github.com/csce585-mlsystems/tutoria
         <span><a href="{{ site.url }}/{{ lectures.dirname }}/{{ lectures.filename }}.pdf">{{ lectures.title }}</a></span><br>
 <span class = "postlower">
 <strong>tl;dr:</strong> {{ lectures.tldr }}</span>
-<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right">
+
+<!-- <strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right">
 	<a href="{{ site.githublink}}/tree/master/{{ lectures.dirname }}"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
   <a href="{{ site.githublink}}/blob/master/{{ lectures.dirname }}/{{ lectures.filename }}.pdf"><i class="fas fa-file-pdf"></i></a>
 </strong> 
-      </li>
+ -->      
+</li>
 {% endfor %}
 </ul>
 

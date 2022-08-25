@@ -17,6 +17,7 @@ leadimage_description: "New to machine learning? Not sure how ML works in produc
 authorurl: "https://pooyanjamshidi.github.io"
 syllabus: "https://github.com/pooyanjamshidi/mls/blob/master/syllabus/mls.pdf"
 githublink: "https://github.com/csce585-mlsystems"
+github: "https://github.com/pooyanjamshidi/mls"
 
 # Build settings
 markdown: kramdown
