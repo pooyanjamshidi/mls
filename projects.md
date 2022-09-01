@@ -19,20 +19,20 @@ The course project is an opportunity to apply what you have learned in class to 
 
 The following categories also fit within the scope, and I highly encourage students to consider such projects: 
 
-* There are lots of resources that you can read, review, and study to find a specific project idea with a clear scope. For example, you can use blog posts from engineering teams at high-tech companies: [Uber Engineering](https://eng.uber.com/), [The Netflix Tech Blog](https://medium.com/netflix-techblog), [Spotify Labs](https://labs.spotify.com/), [Meta](https://engineering.fb.com/), and many more.
+* There are lots of resources that you can read, review, and study to find a specific project idea with a clear scope. For example, you can use `blog posts` from engineering teams at high-tech companies: [Uber Engineering](https://eng.uber.com/), [The Netflix Tech Blog](https://medium.com/netflix-techblog), [Spotify Labs](https://labs.spotify.com/), [Meta](https://engineering.fb.com/), and many more.
 
 
 * Topics related to `AI in Robotics` or `Autonomy in Robotics` are great for this course. You can use simulators such as [Gazebo](https://gazebosim.org/home) or [Bullet](https://pybullet.org/wordpress/) or use cloud services such as [Amazon RoboMaker](https://aws.amazon.com/robomaker/) for your project and do not need to have it on a physical robot, but if you want to do a project with physical robots, you can do it in our robotics lab, come and talk with me. I have several project ideas related to Autonomy and Robotics. We have also a robotics team, called [Gamecock Robotics](http://gamecockrobotics.github.io/). You can define your project to make the robot autonomous. You can also read [blog posts](https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-reinforcement-learning-components-for-open-source-kubeflow-pipelines/) to formulate a well-scoped project. 
 
-* Building on top of an existing ML system that you can find on GitHub, e.g., you can develop a tracking algorithm and develop a plugin for [DeepStream](https://developer.nvidia.com/deepstream-sdk)
+* Building on top of an `open source ML system` that you can find on GitHub, e.g., you can develop a tracking algorithm and develop a plugin for [DeepStream](https://developer.nvidia.com/deepstream-sdk)
 
-* AI competitions and challenge problems are great project ideas for non-CS students, e.g., [EvalAI](https://eval.ai/) hosts many interesting competitions with prizes suitable for students from all backgrounds, e.g., (i) [Open Catalyst Challenge](https://opencatalystproject.org/) for Chemical Engineering students; (ii) [Neural Latents Benchmark](https://neurallatents.github.io/) for Neuroscience students; (iii) [The Robotic Vision Challenges](https://nikosuenderhauf.github.io/roboticvisionchallenges/) for students interested in robotics. 
+* `AI competitions` are great project ideas for non-CS students, e.g., [EvalAI](https://eval.ai/) hosts many interesting competitions with prizes suitable for students from all backgrounds, e.g., (i) [Open Catalyst Challenge](https://opencatalystproject.org/) for Chemical Engineering students; (ii) [Neural Latents Benchmark](https://neurallatents.github.io/) for Neuroscience students; (iii) [The Robotic Vision Challenges](https://nikosuenderhauf.github.io/roboticvisionchallenges/) for students interested in robotics. 
 
-* Hackathons, e.g., [PyTorch Annual Hackathon 2021](https://pytorch2021.devpost.com/), [AWS BugBust](https://aws.amazon.com/bugbust/), [Kaggle](https://www.kaggle.com/competitions)
+* `Hackathons`, e.g., [PyTorch Annual Hackathon 2021](https://pytorch2021.devpost.com/), [AWS BugBust](https://aws.amazon.com/bugbust/), [Kaggle](https://www.kaggle.com/competitions)
 
-* Systematic study of open source ML Systems via (i) interview study (please make sure you design the interview study correctly before conducting the interviews) and/or (ii) Formulating interesting research questions about building ML systems, for example, contrasting testing practices for ML systems vs. traditional software systems, collecting data from software repositories, and systematically extracting info from these repositories that answers your research questions.
+* `Systematic study of open source ML Systems` via (i) interview study (please make sure you design the interview study correctly before conducting the interviews) and/or (ii) Formulating interesting research questions about building ML systems, for example, contrasting testing practices for ML systems vs. traditional software systems, collecting data from software repositories, and systematically extracting info from these repositories that answers your research questions.
 
-* TinyML projects, you can find many ideas on [GitHub](https://github.com/gigwegbe/tinyml-papers-and-projects) and [TinyML community forum](https://discuss.tinymlx.org/c/projects/5)
+* `TinyML` projects, you can find many ideas on [GitHub](https://github.com/gigwegbe/tinyml-papers-and-projects) and [TinyML community forum](https://discuss.tinymlx.org/c/projects/5)
 
 * And, in general, for any interesting ML systems project ideas, try [GitHub](https://github.com/NirantK/awesome-project-ideas), [Reddit](https://www.reddit.com/r/MachineLearning/search/?q=systems&restrict_sr=1)
 
