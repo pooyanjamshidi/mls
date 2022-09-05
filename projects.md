@@ -4,9 +4,11 @@ title: Projects
 permalink: /projects/
 ---
 
-## Coursework Template
+## Submission
 
-Please use this [template](https://github.com/pooyanjamshidi/mls/blob/master/resources/coursework-template.zip) for submitting your written assignments.
+For submitting your homework and project deliverables, please use the instructions and template in the [course resources repository](https://github.com/csce585-mlsystems/course-resources).
+
+<!-- Please use this [template](https://github.com/pooyanjamshidi/mls/blob/master/resources/coursework-template.zip) for submitting your written assignments. -->
 
 
 ## Topics
@@ -28,13 +30,17 @@ The following categories also fit within the scope, and I highly encourage stude
 
 * `AI competitions` are great project ideas for non-CS students, e.g., [EvalAI](https://eval.ai/) hosts many interesting competitions with prizes suitable for students from all backgrounds, e.g., (i) [Open Catalyst Challenge](https://opencatalystproject.org/) for Chemical Engineering students; (ii) [Neural Latents Benchmark](https://neurallatents.github.io/) for Neuroscience students; (iii) [The Robotic Vision Challenges](https://nikosuenderhauf.github.io/roboticvisionchallenges/) for students interested in robotics. 
 
-* `Hackathons`, e.g., [PyTorch Annual Hackathon 2021](https://pytorch2021.devpost.com/), [AWS BugBust](https://aws.amazon.com/bugbust/), [Kaggle](https://www.kaggle.com/competitions)
+* `Hackathons`: e.g., [PyTorch Annual Hackathon 2021](https://pytorch2021.devpost.com/), [AWS BugBust](https://aws.amazon.com/bugbust/), [Kaggle](https://www.kaggle.com/competitions)
 
 * `Systematic study of open source ML Systems` via (i) interview study (please make sure you design the interview study correctly before conducting the interviews) and/or (ii) Formulating interesting research questions about building ML systems, for example, contrasting testing practices for ML systems vs. traditional software systems, collecting data from software repositories, and systematically extracting info from these repositories that answers your research questions.
 
-* `TinyML` projects, you can find many ideas on [GitHub](https://github.com/gigwegbe/tinyml-papers-and-projects) and [TinyML community forum](https://discuss.tinymlx.org/c/projects/5)
+* `TinyML` projects: You can find many ideas on [GitHub](https://github.com/gigwegbe/tinyml-papers-and-projects) and [TinyML community forum](https://discuss.tinymlx.org/c/projects/5)
 
-* And, in general, for any interesting ML systems project ideas, try [GitHub](https://github.com/NirantK/awesome-project-ideas), [Reddit](https://www.reddit.com/r/MachineLearning/search/?q=systems&restrict_sr=1)
+* `AI for Social Good`: There are massive opportunities to define your project on AI for Social Good, just google it and listen to podcasts for ideas, e.g., [In Machines We Trust](https://podcasts.apple.com/us/podcast/in-machines-we-trust/id1523584878?i=1000577165082) or [The TWIML AI Podcast](https://podcasts.apple.com/us/podcast/the-twiml-ai-podcast-formerly-this-week-in-machine/id1116303051?i=1000576160711).
+
+* Topics related to `Systems for ML` or `ML for Systems`: There are many opportunities to develop an infrastructure to make the ML workflow faster, more efficient, reliable, dependable, etc. Please check out some of the work at [AISys lab](https://pooyanjamshidi.github.io/publications/).
+
+* And, in general, for any interesting ML systems project ideas, try [GitHub](https://github.com/NirantK/awesome-project-ideas), or [Reddit](https://www.reddit.com/r/MachineLearning/search/?q=systems&restrict_sr=1).
 
 If you are unsure whether the project you have defined fits within the scope, please talk with me after class. If you believe that might be helpful for other students, please ask your question on Piazza or during class hours.
 
