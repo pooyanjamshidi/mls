@@ -13,6 +13,11 @@
   dirname: lectures
   tldr: "This lecture discusses important aspects of AI trustworthiness, including fairness, transparency, accountability, and robustness."
 
+- title: "Lecture 4: Machine Learning Systems: Designing ML Systems"
+  filename: csce585_2022_04_slides_designing_ml_systems
+  dirname: lectures
+  tldr: "This lecture discusses designing and building process of ML Systems."
+
 - title: "2021 Lecture 2: Designing Computer Systems for Machine Learning"
   filename: csce585-2021-designing-mlsys
   dirname: lectures
