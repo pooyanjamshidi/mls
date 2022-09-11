@@ -40,6 +40,9 @@ The following categories also fit within the scope, and I highly encourage stude
 
 * Topics related to `Systems for ML` or `ML for Systems`: There are many opportunities to develop an infrastructure to make the ML workflow faster, more efficient, reliable, dependable, etc. Please check out some of the work at [AISys lab](https://pooyanjamshidi.github.io/publications/).
 
+
+* `AI for Music`: Topics related to music synthesis, music perception, music ranking, music experience, and many more.
+
 * And, in general, for any interesting ML systems project ideas, try [GitHub](https://github.com/NirantK/awesome-project-ideas), or [Reddit](https://www.reddit.com/r/MachineLearning/search/?q=systems&restrict_sr=1).
 
 If you are unsure whether the project you have defined fits within the scope, please talk with me after class. If you believe that might be helpful for other students, please ask your question on Piazza or during class hours.
@@ -89,15 +92,27 @@ Your supplementary material might include:
 - `Source code`
 - `IPython notebook, videos, interactive visualizations, demos, etc...`
 
-Some examples of good project reports:
+## Examples
+
+Some examples from past version of the course: 
+
+* Fall 2021:
+- [`Analysis of a Biaxial-RNN Music Composition Model on Various Genres of Music`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2021/music_composition_carol_joseph_michael.pdf)
+
+
+* Fall 2018:
+- [`Design Space Exploration of Deep Neural Network in Resource-Constrained Devices`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/project1.pdf)
+<!-- Project1: Hassan Alamri, Yang Ren, Rui Xin -->
+- [`Design Space Exploration of Model Serving`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/project3.pdf)
+<!-- Joshi Bharat, Harrison Howell, Jianhai Su -->
+
+Some examples of good project reports from other universities:
+
+* Stanford CS231:
 - [`Sample 1`](http://cs231n.stanford.edu/reports/2017/pdfs/130.pdf)
 - [`Sample 2`](http://cs231n.stanford.edu/reports/2017/pdfs/121.pdf)
 - [`Sample 3`](http://cs231n.stanford.edu/reports/2017/pdfs/610.pdf)
 - [`Sample 4`](http://cs231n.stanford.edu/reports/2017/pdfs/116.pdf)
-
-Project reports - CSCE 790 - Fall 2018:
-- [`Project1: Hassan Alamri, Yang Ren, Rui Xin`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project1.pdf)
-- [`Project3: Joshi Bharat, Harrison Howell, Jianhai Su`](https://github.com/pooyanjamshidi/mls/blob/master/reports/2018/pdfs/project3.pdf)
 
 ## Project Presentation (videorecording)
 We will use video recording for groups to present and share their project. Each group must submit a 5-minute presentation video for their final project. Students can be as creative as they like for their video presentations. The easiest option is to create a slide deck together as a team and record yourselves presenting the slide deck as a group using zoom. Each student member should speak during the presentation. Also, we prefer if students use a webcam to see you in the video recordings.
