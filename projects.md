@@ -41,7 +41,7 @@ The following categories also fit within the scope, and I highly encourage stude
 * Topics related to `Systems for ML` or `ML for Systems`: There are many opportunities to develop an infrastructure to make the ML workflow faster, more efficient, reliable, dependable, etc. Please check out some of the work at [AISys lab](https://pooyanjamshidi.github.io/publications/).
 
 
-* `AI for Music`: Topics related to music synthesis, music perception, music ranking, music experience, and many more.
+* `AI and Music`: Topics related to music synthesis, music perception, music ranking, music experience, and many more. Please check out some cool works: (i) [OpenAI Jukebox](https://openai.com/blog/jukebox/), (ii) [Deep Learning Could Bring the Concert Experience Home](https://spectrum.ieee.org/amp/3d-audio-2657959499).
 
 * And, in general, for any interesting ML systems project ideas, try [GitHub](https://github.com/NirantK/awesome-project-ideas), or [Reddit](https://www.reddit.com/r/MachineLearning/search/?q=systems&restrict_sr=1).
 
