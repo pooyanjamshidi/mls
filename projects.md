@@ -4,6 +4,9 @@ title: Projects
 permalink: /projects/
 ---
 
+{% include image.html url="/mls/_images/mls-explained.png" caption="Machine learning systems, explained!" width="300" height="100" align="right" %}
+
+
 ## Submission
 
 For submitting your homework and project deliverables, please use the instructions and template in the [course resources repository](https://github.com/csce585-mlsystems/course-resources).
