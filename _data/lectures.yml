@@ -18,18 +18,18 @@
   dirname: lectures
   tldr: "This lecture discusses designing and building process of ML Systems."
 
-- title: "2021 Lecture 2: Designing Computer Systems for Machine Learning"
-  filename: csce585-2021-designing-mlsys
-  dirname: lectures
-  tldr: "This lecture reviews challenges and principled solutions for building real-world ML systems in production."
+# - title: "2021 Lecture 2: Designing Computer Systems for Machine Learning"
+#   filename: csce585-2021-designing-mlsys
+#   dirname: lectures
+#   tldr: "This lecture reviews challenges and principled solutions for building real-world ML systems in production."
 
-- title: "2021 Lecture 3: Perceptrons and Logistic Regression"
-  filename: csce585-perceptron-logisticregression
+- title: "Lecture 5: Perceptrons and Logistic Regression"
+  filename: csce585_2022_05_slides_perceptrons_logistic_regression
   dirname: lectures
   tldr: "This lecture is about simple models and algorithms for supervised learning of binary and multi-class classifiers."
 
-- title: "2021 Lecture 4: Optimization and Deep Neural Networks"
-  filename: csce585-optimization-nn
+- title: "Lecture 6: Optimization and Neural Networks"
+  filename: csce585_2022_06_slides_optimization_neural_nets
   dirname: lectures
   tldr: "This lecture is about optimization techniques to train models and build deep nerual networks from multi-class logistic regression models."
 
