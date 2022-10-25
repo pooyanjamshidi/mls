@@ -18,11 +18,6 @@
   dirname: lectures
   tldr: "This lecture discusses designing and building process of ML Systems."
 
-# - title: "2021 Lecture 2: Designing Computer Systems for Machine Learning"
-#   filename: csce585-2021-designing-mlsys
-#   dirname: lectures
-#   tldr: "This lecture reviews challenges and principled solutions for building real-world ML systems in production."
-
 - title: "Lecture 5: Perceptrons and Logistic Regression"
   filename: csce585_2022_05_slides_perceptrons_logistic_regression
   dirname: lectures
@@ -32,6 +27,31 @@
   filename: csce585_2022_06_slides_optimization_neural_nets
   dirname: lectures
   tldr: "This lecture is about optimization techniques to train models and build deep nerual networks from multi-class logistic regression models."
+
+- title: "Lecture 7: Machine Learning System Stack"
+  filename: csce585_2022_07_slides_deep_learning_system_stack
+  dirname: lectures
+  tldr: "This lecture reviews the full-stack machine learning system development."
+
+- title: "Lecture 8: Backpropagation and Automatic Differentiation"
+  filename: csce585_2022_08_slides_backpropagation_automatic_differentiation
+  dirname: lectures
+  tldr: "This lecture reviews backprop and automatic differentiation."
+
+- title: "Lecture 9: Convolutional Neural Networks (CNNs, ConvNets)"
+  filename: csce585_2022_09_slides_cnn
+  dirname: lectures
+  tldr: "This lecture reviews the foundation, mathematical operations, the architecture of CNNs, and contrasts it with dense networks in DNNs."
+
+- title: "Lecture 10: Hardware for Machine Learning Systems"
+  filename: csce585_2022_10_slides_ml_hardware
+  dirname: lectures
+  tldr: "This lecture reviews hardware layer of machine learning (deep learning) systems."
+
+- title: "Lecture 11: Model Compression, Pruning, and Quantization"
+  filename: csce585_2022_11_slides_dnn_compression_prunning_quantization
+  dirname: lectures
+  tldr: "This lecture discusses the key ideas behind DNN model compression techniques."
 
 - title: "2021 Lecture 5: Naïve Bayes"
   filename: csce585-naivebayes
