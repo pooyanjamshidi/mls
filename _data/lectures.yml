@@ -1,10 +1,10 @@
 - title: "Lecture 1: Machine Learning Systems: Course Overview"
-  filename: csce585_2022_01_slides_mlsys_course_overview
+  filename: csce585_2023_01_slides_mlsys_course_overview
   dirname: lectures
   tldr: "This lecture reviews a brief overview of the course, its requirements, learning goals, policies, and expectations."
 
 - title: "Lecture 2: Machine Learning Systems: ML in Production"
-  filename: csce585_2022_02_slides_ml_in_production
+  filename: csce585_2023_02_slides_ml_in_production
   dirname: lectures
   tldr: "This lecture reviews challenges in building and deploying real-world ML systems in production."
 
@@ -34,7 +34,7 @@
   tldr: "This lecture reviews the full-stack machine learning system development."
 
 - title: "Lecture 8: Backpropagation and Automatic Differentiation"
-  filename: csce585_2022_08_slides_backpropagation_automatic_differentiation
+  filename: csce585_2023_08_slides_backpropagation_automatic_differentiation
   dirname: lectures
   tldr: "This lecture reviews backprop and automatic differentiation."
 
