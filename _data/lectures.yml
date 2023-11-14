@@ -53,6 +53,11 @@
   dirname: lectures
   tldr: "This lecture discusses the key ideas behind DNN model compression techniques."
 
+- title: "Lecture 12: Scalable & Distributed Machine Learning"
+  filename: csce585_2023_12_slides_scalable_distributed_ML
+  dirname: lectures
+  tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
+
 - title: "2021 Lecture 5: Naïve Bayes"
   filename: csce585-naivebayes
   dirname: lectures
