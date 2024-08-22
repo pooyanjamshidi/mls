@@ -1,139 +1,144 @@
-- title: "Lecture 1: Machine Learning Systems: Course Overview"
-  filename: csce585_2023_01_slides_mlsys_course_overview
+- title: "Lecture 0: Reconciling Accuracy, Cost, and Latency of Inference Serving Systems"
+  filename: InfAdapter-IPA-Sponge-complete
   dirname: lectures
   tldr: "This lecture reviews a brief overview of the course, its requirements, learning goals, policies, and expectations."
 
-- title: "Lecture 2: Machine Learning Systems: ML in Production"
-  filename: csce585_2023_02_slides_ml_in_production
+- title: "Lecture 1: Machine Learning Systems: Course Overview"
+  filename: csce585_2024_01_slides_mlsys_course_overview
   dirname: lectures
-  tldr: "This lecture reviews challenges in building and deploying real-world ML systems in production."
+  tldr: "This lecture reviews a brief overview of the course, its requirements, learning goals, policies, and expectations."
 
-- title: "Lecture 3: Machine Learning Systems: Trustworthy AI"
-  filename: csce585_2022_03_slides_trustworthy_ai
-  dirname: lectures
-  tldr: "This lecture discusses important aspects of AI trustworthiness, including fairness, transparency, accountability, and robustness."
+# - title: "Lecture 2: Machine Learning Systems: ML in Production"
+#   filename: csce585_2023_02_slides_ml_in_production
+#   dirname: lectures
+#   tldr: "This lecture reviews challenges in building and deploying real-world ML systems in production."
 
-- title: "Lecture 4: Machine Learning Systems: Designing ML Systems"
-  filename: csce585_2022_04_slides_designing_ml_systems
-  dirname: lectures
-  tldr: "This lecture discusses designing and building process of ML Systems."
+# - title: "Lecture 3: Machine Learning Systems: Trustworthy AI"
+#   filename: csce585_2022_03_slides_trustworthy_ai
+#   dirname: lectures
+#   tldr: "This lecture discusses important aspects of AI trustworthiness, including fairness, transparency, accountability, and robustness."
 
-- title: "Lecture 5: Perceptrons and Logistic Regression"
-  filename: csce585_2022_05_slides_perceptrons_logistic_regression
-  dirname: lectures
-  tldr: "This lecture is about simple models and algorithms for supervised learning of binary and multi-class classifiers."
+# - title: "Lecture 4: Machine Learning Systems: Designing ML Systems"
+#   filename: csce585_2022_04_slides_designing_ml_systems
+#   dirname: lectures
+#   tldr: "This lecture discusses designing and building process of ML Systems."
 
-- title: "Lecture 6: Optimization and Neural Networks"
-  filename: csce585_2022_06_slides_optimization_neural_nets
-  dirname: lectures
-  tldr: "This lecture is about optimization techniques to train models and build deep nerual networks from multi-class logistic regression models."
+# - title: "Lecture 5: Perceptrons and Logistic Regression"
+#   filename: csce585_2022_05_slides_perceptrons_logistic_regression
+#   dirname: lectures
+#   tldr: "This lecture is about simple models and algorithms for supervised learning of binary and multi-class classifiers."
 
-- title: "Lecture 7: Machine Learning System Stack"
-  filename: csce585_2022_07_slides_deep_learning_system_stack
-  dirname: lectures
-  tldr: "This lecture reviews the full-stack machine learning system development."
+# - title: "Lecture 6: Optimization and Neural Networks"
+#   filename: csce585_2022_06_slides_optimization_neural_nets
+#   dirname: lectures
+#   tldr: "This lecture is about optimization techniques to train models and build deep nerual networks from multi-class logistic regression models."
 
-- title: "Lecture 8: Backpropagation and Automatic Differentiation"
-  filename: csce585_2023_08_slides_backpropagation_automatic_differentiation
-  dirname: lectures
-  tldr: "This lecture reviews backprop and automatic differentiation."
+# - title: "Lecture 7: Machine Learning System Stack"
+#   filename: csce585_2022_07_slides_deep_learning_system_stack
+#   dirname: lectures
+#   tldr: "This lecture reviews the full-stack machine learning system development."
 
-- title: "Lecture 9: Convolutional Neural Networks (CNNs, ConvNets)"
-  filename: csce585_2022_09_slides_cnn
-  dirname: lectures
-  tldr: "This lecture reviews the foundation, mathematical operations, the architecture of CNNs, and contrasts it with dense networks in DNNs."
+# - title: "Lecture 8: Backpropagation and Automatic Differentiation"
+#   filename: csce585_2023_08_slides_backpropagation_automatic_differentiation
+#   dirname: lectures
+#   tldr: "This lecture reviews backprop and automatic differentiation."
 
-- title: "Lecture 10: Hardware for Machine Learning Systems"
-  filename: csce585_2022_10_slides_ml_hardware
-  dirname: lectures
-  tldr: "This lecture reviews hardware layer of machine learning (deep learning) systems."
+# - title: "Lecture 9: Convolutional Neural Networks (CNNs, ConvNets)"
+#   filename: csce585_2022_09_slides_cnn
+#   dirname: lectures
+#   tldr: "This lecture reviews the foundation, mathematical operations, the architecture of CNNs, and contrasts it with dense networks in DNNs."
 
-- title: "Lecture 11: Model Compression, Pruning, and Quantization"
-  filename: csce585_2022_11_slides_dnn_compression_prunning_quantization
-  dirname: lectures
-  tldr: "This lecture discusses the key ideas behind DNN model compression techniques."
+# - title: "Lecture 10: Hardware for Machine Learning Systems"
+#   filename: csce585_2022_10_slides_ml_hardware
+#   dirname: lectures
+#   tldr: "This lecture reviews hardware layer of machine learning (deep learning) systems."
 
-- title: "Lecture 12: Scalable & Distributed Machine Learning"
-  filename: csce585_2023_12_slides_scalable_distributed_ML
-  dirname: lectures
-  tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
+# - title: "Lecture 11: Model Compression, Pruning, and Quantization"
+#   filename: csce585_2022_11_slides_dnn_compression_prunning_quantization
+#   dirname: lectures
+#   tldr: "This lecture discusses the key ideas behind DNN model compression techniques."
 
-- title: "2021 Lecture 5: Naïve Bayes"
-  filename: csce585-naivebayes
-  dirname: lectures
-  tldr: "This lecture is about simple classifiers based on Bayes Nets with (naive) independence assumptions between features."
+# - title: "Lecture 12: Scalable & Distributed Machine Learning"
+#   filename: csce585_2023_12_slides_scalable_distributed_ML
+#   dirname: lectures
+#   tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
 
-- title: "2021 Lecture 6: Machine Learning System Stack"
-  filename: csce585-dlsysstack
-  dirname: lectures
-  tldr: "This lecture reviews the full-stack machine learning system development."
+# - title: "2021 Lecture 5: Naïve Bayes"
+#   filename: csce585-naivebayes
+#   dirname: lectures
+#   tldr: "This lecture is about simple classifiers based on Bayes Nets with (naive) independence assumptions between features."
 
-- title: "2021 Lecture 7: Convolutional Neural Networks (CNNs/ConvNets)"
-  filename: csce585-cnn
-  dirname: lectures
-  tldr: "This lecture reviews the foundation, mathematical operations, the architecture of CNNs, and contrasts it with dense networks in DNNs."
+# - title: "2021 Lecture 6: Machine Learning System Stack"
+#   filename: csce585-dlsysstack
+#   dirname: lectures
+#   tldr: "This lecture reviews the full-stack machine learning system development."
 
-- title: "2021 Lecture 8: Hardware for Machine Learning Systems"
-  filename: csce585-ml-hardware
-  dirname: lectures
-  tldr: "This lecture reviews hardware layer of machine learning (deep learning) systems."
+# - title: "2021 Lecture 7: Convolutional Neural Networks (CNNs/ConvNets)"
+#   filename: csce585-cnn
+#   dirname: lectures
+#   tldr: "This lecture reviews the foundation, mathematical operations, the architecture of CNNs, and contrasts it with dense networks in DNNs."
 
-- title: "2021 Lecture 9: Model Compression: Pruning and Quantization"
-  filename: csce585-model-compression
-  dirname: lectures
-  tldr: "This lecture discusses the key ideas behind DNN model compression techniques."
+# - title: "2021 Lecture 8: Hardware for Machine Learning Systems"
+#   filename: csce585-ml-hardware
+#   dirname: lectures
+#   tldr: "This lecture reviews hardware layer of machine learning (deep learning) systems."
 
-- title: "2021 Lecture 10: Performance Tradeoff in Machine Learning Systems"
-  filename: csce585-performance-tradeoff
-  dirname: lectures
-  tldr: "This lecture discusses several research directions (multi-objective optimization, transfer learning, causal inference) in ML Systems."
+# - title: "2021 Lecture 9: Model Compression: Pruning and Quantization"
+#   filename: csce585-model-compression
+#   dirname: lectures
+#   tldr: "This lecture discusses the key ideas behind DNN model compression techniques."
 
-- title: "2020 Introduction to Machine Learning Systems (Uber Case Study)"
-  filename: mls01
-  dirname: lectures
-  tldr: "This lecture reviews challenges of building a real-world ML system that scales."
+# - title: "2021 Lecture 10: Performance Tradeoff in Machine Learning Systems"
+#   filename: csce585-performance-tradeoff
+#   dirname: lectures
+#   tldr: "This lecture discusses several research directions (multi-objective optimization, transfer learning, causal inference) in ML Systems."
+
+# - title: "2020 Introduction to Machine Learning Systems (Uber Case Study)"
+#   filename: mls01
+#   dirname: lectures
+#   tldr: "This lecture reviews challenges of building a real-world ML system that scales."
   
-- title: "2020 Machine Learning Systems: Challenges and Solutions"
-  filename: mls02
-  dirname: lectures
-  tldr: "This lecture reviews reactive strategies to incorporate ML-based components into a larger system."
+# - title: "2020 Machine Learning Systems: Challenges and Solutions"
+#   filename: mls02
+#   dirname: lectures
+#   tldr: "This lecture reviews reactive strategies to incorporate ML-based components into a larger system."
 
-- title: "2020 Machine Learning Systems: Learning Theory"
-  filename: learning_theory
-  dirname: lectures
-  tldr: "This lecture reviews basic concepts related to statistical learning theory (e.g., hypothesis space)."
+# - title: "2020 Machine Learning Systems: Learning Theory"
+#   filename: learning_theory
+#   dirname: lectures
+#   tldr: "This lecture reviews basic concepts related to statistical learning theory (e.g., hypothesis space)."
 
-- title: "2020 Machine Learning Systems: Backpropagation and Automatic Differentiation"
-  filename: backprop
-  dirname: lectures
-  tldr: "This lecture reviews backprop and automatic differentiation."
+# - title: "2020 Machine Learning Systems: Backpropagation and Automatic Differentiation"
+#   filename: backprop
+#   dirname: lectures
+#   tldr: "This lecture reviews backprop and automatic differentiation."
 
-- title: "2020 Machine Learning Systems: Optimization and Performance Understanding of ML Systems"
-  filename: mlsysperf
-  dirname: lectures
-  tldr: "This lecture discusses performance optimization of machine learning systems."
+# - title: "2020 Machine Learning Systems: Optimization and Performance Understanding of ML Systems"
+#   filename: mlsysperf
+#   dirname: lectures
+#   tldr: "This lecture discusses performance optimization of machine learning systems."
 
-- title: "2020 Machine Learning Systems: Machine Learning Platforms"
-  filename: mls03
-  dirname: lectures
-  tldr: "This lecture reviews a platform that facilitates building an ML pipeline in production at scale."
+# - title: "2020 Machine Learning Systems: Machine Learning Platforms"
+#   filename: mls03
+#   dirname: lectures
+#   tldr: "This lecture reviews a platform that facilitates building an ML pipeline in production at scale."
 
-- title: "2020 Machine Learning Systems: Scalable Machine Learning"
-  filename: mls04
-  dirname: lectures
-  tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
+# - title: "2020 Machine Learning Systems: Scalable Machine Learning"
+#   filename: mls04
+#   dirname: lectures
+#   tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
 
-- title: "2020 Machine Learning Systems: Distributed Machine Learning"
-  filename: mls05
-  dirname: lectures
-  tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
+# - title: "2020 Machine Learning Systems: Distributed Machine Learning"
+#   filename: mls05
+#   dirname: lectures
+#   tldr: "This lecture introduces how to scale up deployment (over multiple nodes) to speed up training and inference."
 
-- title: "2020 Machine Learning Systems: Recurrent Neural Networks"
-  filename: mls06
-  dirname: lectures
-  tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
+# - title: "2020 Machine Learning Systems: Recurrent Neural Networks"
+#   filename: mls06
+#   dirname: lectures
+#   tldr: "This lecture studies RNNs and LSTM architectures for predicting rare events."
 
-- title: "2020 Machine Learning Systems: Intrinsic Dimension"
-  filename: mls07
-  dirname: lectures
-  tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
+# - title: "2020 Machine Learning Systems: Intrinsic Dimension"
+#   filename: mls07
+#   dirname: lectures
+#   tldr: "This lecture introduces the concept of instrinsic dimension and its implications for model compression."
