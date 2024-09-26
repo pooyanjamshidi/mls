@@ -13,6 +13,11 @@
   dirname: lectures
   tldr: "In this lecture, we discuss a systematic approach for understanding, both high-level ideas and technical details in MLSys papers."
 
+- title: "Lecture 4: Designing and Motivating (ML) Systems Experiments"
+  filename: csce585_2024_04_slides_mlsys_design-experiments-motivation
+  dirname: lectures
+  tldr: "This lecture offers students both theoretical understanding and practical guidance by using InferLine as a concrete example, while giving them a clear roadmap for how to motivate their own projects experimentally."
+
 # - title: "Lecture 2: Machine Learning Systems: ML in Production"
 #   filename: csce585_2023_02_slides_ml_in_production
 #   dirname: lectures
