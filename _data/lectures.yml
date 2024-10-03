@@ -23,6 +23,11 @@
   dirname: lectures
   tldr: "So far, we have explored two specific ML Systems work in research (InferLine and IPA)! This lecture contrasts challenges in building and deploying real-world ML systems in production vs in research."
 
+- title: "Lecture 6: Designing Machine Learning Systems"
+  filename: csce585_2024_06_slides_designing_ml_systems
+  dirname: lectures
+  tldr: "This lecture discusses designing and building process of ML Systems."
+
 # - title: "Lecture 3: Machine Learning Systems: Trustworthy AI"
 #   filename: csce585_2022_03_slides_trustworthy_ai
 #   dirname: lectures
