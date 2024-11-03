@@ -28,6 +28,11 @@
   dirname: lectures
   tldr: "This lecture discusses designing and building process of ML Systems."
 
+- title: "Lecture 7: Understanding and Explaining the Root Causes of (Performance) Faults in (ML) Systems with Causal AI"
+  filename: csce585-understanding-causal-ai
+  dirname: lectures
+  tldr: "This lecture discusses several research directions (multi-objective optimization, transfer learning, causal inference) in ML Systems."
+
 # - title: "Lecture 3: Machine Learning Systems: Trustworthy AI"
 #   filename: csce585_2022_03_slides_trustworthy_ai
 #   dirname: lectures
