@@ -29,7 +29,7 @@
   tldr: "This lecture discusses designing and building process of ML Systems."
 
 - title: "Lecture 7: Understanding and Explaining the Root Causes of (Performance) Faults in (ML) Systems with Causal AI"
-  filename: csce585-understanding-causal-ai
+  filename: csce585_2024_07_slides_causal_ai_ml_systems
   dirname: lectures
   tldr: "This lecture discusses several research directions (multi-objective optimization, transfer learning, causal inference) in ML Systems."
 
