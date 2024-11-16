@@ -33,6 +33,11 @@
   dirname: lectures
   tldr: "This lecture discusses several research directions (multi-objective optimization, transfer learning, causal inference) in ML Systems."
 
+- title: "Lecture 8: Replicating Results in Machine Learning Systems Research"
+  filename: csce585_2024_08_slides_mlsys_how-to-replicate-mlsys-papers
+  dirname: lectures
+  tldr: "This lecture discusses the importance of replication in machine learning systems research and how you can integrate it into your projects."
+  
 # - title: "Lecture 3: Machine Learning Systems: Trustworthy AI"
 #   filename: csce585_2022_03_slides_trustworthy_ai
 #   dirname: lectures
