@@ -38,6 +38,12 @@
   dirname: lectures
   tldr: "This lecture discusses the importance of replication in machine learning systems research and how you can integrate it into your projects."
   
+- title: "Guest Lecture: The Effects of Interventions and Causal Bayesian Optimization"
+  filename: csce585_2024_slides_causal_bo
+  dirname: lectures
+  tldr: "In this guest lecture, Mohammad Ali Javidian (Appalachian State University) talks about his recent work on Causal BO."
+
+  
 # - title: "Lecture 3: Machine Learning Systems: Trustworthy AI"
 #   filename: csce585_2022_03_slides_trustworthy_ai
 #   dirname: lectures
