@@ -37,9 +37,13 @@
   filename: csce585_2024_08_slides_mlsys_how-to-replicate-mlsys-papers
   dirname: lectures
   tldr: "This lecture discusses the importance of replication in machine learning systems research and how you can integrate it into your projects."
-  
+
+- title: "Guest Lecture: Performance Modeling, Debugging, and Optimization of Highly Configurable Robotic Systems with Causal AI"
+  filename: csce585_2024_slides_hossexn_robotics_causality
+  tldr: "In this guest lecture, Abir Hossen (PhD student at AISys lab) talks about his research on finding root causes of failures in robotic systems using causal reasoning."
+
 - title: "Guest Lecture: The Effects of Interventions and Causal Bayesian Optimization"
-  filename: csce585_2024_slides_causal_bo
+  filename: csce585_2024_slides_javidian_causal_bo
   dirname: lectures
   tldr: "In this guest lecture, Mohammad Ali Javidian (Appalachian State University) talks about his recent work on Causal BO."
 
