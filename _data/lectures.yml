@@ -47,6 +47,11 @@
   dirname: lectures
   tldr: "In this guest lecture, Mohammad Ali Javidian (Appalachian State University) talks about his recent work on Causal BO."
 
+- title: "Lecture 10: Building the Next Impactful ML System: Lessons, Strategies, and Inspirations from CSCE 585"
+  filename: csce585_2024_10_slides_mlsys_impactful_ml_system
+  dirname: lectures
+  tldr: "This final lecture discusses how to build the next impactful ML Systems, drawing inspiration from current course materials."
+
   
 # - title: "Lecture 3: Machine Learning Systems: Trustworthy AI"
 #   filename: csce585_2022_03_slides_trustworthy_ai
