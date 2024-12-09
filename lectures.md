@@ -24,7 +24,9 @@ permalink: /lectures/
 
 Lecture recordings are available on [YouTube](https://www.youtube.com/playlist?list=PLtkQf9LiEmLFS56WTpRJ3PZwwCYyi2Cdu).
 
-Tutorials are available on [GitHub](https://github.com/csce585-mlsystems/tutorials).
+Hands-On Tutorials are available on [GitHub](https://github.com/csce585-mlsystems/tutorials).
+
+Detailed instructions for different stages of course projects are available [here](https://github.com/csce585-mlsystems/instructions).
 
 <ul id="archive">
 {% for lectures in site.data.lectures %}
