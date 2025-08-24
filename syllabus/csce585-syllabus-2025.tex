@@ -1,0 +1,115 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{CSCE 585: Machine Learning Systems}} \\
+University of South Carolina — Spring 2025 \\
+Instructor: Prof. Pooyan Jamshidi
+\end{center}
+
+\section*{Course Description}
+Machine Learning (ML) has transformed nearly every industry, but deploying ML models in real systems is far more complex than training them in isolation. This course explores the emerging discipline of \textbf{Machine Learning Systems (MLSys)} — the intersection of ML, systems, and software engineering. Students will learn to critically read MLSys papers, design reproducible experiments, and implement scalable, efficient, and trustworthy ML systems.
+
+We will cover topics ranging from \textbf{ML in production pipelines}, \textbf{causal reasoning for robustness}, and \textbf{experiment design}, to modern frontiers such as \textbf{LLM serving \& scaling}, \textbf{compound/multi-agent LLM architectures}, \textbf{hardware efficiency \& sustainability}, and \textbf{privacy, safety, and security}. The course emphasizes \textbf{hands-on replication of MLSys research}, engagement with state-of-the-art frameworks (e.g., vLLM, LangChain, Ray Serve, MLPerf), and a \textbf{capstone project}.
+
+\section*{Learning Objectives}
+By the end of the course, students will be able to:
+\begin{enumerate}[leftmargin=*]
+    \item Critically evaluate MLSys research using structured reading and critique methods.
+    \item Design and analyze reproducible ML experiments with appropriate metrics.
+    \item Replicate and extend results from cutting-edge MLSys papers.
+    \item Understand challenges in production ML systems (MLOps, feature stores, retraining).
+    \item Engage with modern MLSys frontiers: LLM systems, compound architectures, sustainability, and privacy/safety.
+    \item Communicate effectively in written reports and oral presentations.
+\end{enumerate}
+
+\section*{Course Format}
+\begin{itemize}[leftmargin=*]
+    \item Weekly lectures and paper discussions
+    \item Replication \& lab assignments (short, hands-on experiments)
+    \item Capstone project (team-based, with milestones and final presentation)
+\end{itemize}
+
+\section*{Grading Breakdown}
+\begin{tabular}{ll}
+Reading \& Critique Assignments & 15\% \\
+Replication \& Lab Assignments  & 30\% \\
+Capstone Project                & 40\% \\
+Participation \& Discussions    & 15\% \\
+\textbf{Total}                  & 100\% \\
+\end{tabular}
+
+\section*{Tentative Weekly Schedule}
+
+\subsection*{Part I: Foundations (Weeks 1–4)}
+\begin{enumerate}[leftmargin=*]
+    \item Course Overview \& Motivation  
+    \item How to Read and Critique MLSys Papers  
+    \item Designing \& Motivating Experiments (InferLine case study)  
+    \item Project Milestone 1: Problem Motivation  
+\end{enumerate}
+
+\subsection*{Part II: Core MLSys Challenges (Weeks 5–8)}
+\begin{enumerate}[resume, leftmargin=*]
+    \item ML in Production \& MLOps  
+    \item Designing ML Systems  
+    \item Causal AI \& Robust ML Systems  
+    \item Guest Lecture(s): Robotics Causality / Causal Bayesian Optimization  
+\end{enumerate}
+
+\subsection*{Part III: Modern Frontiers (Weeks 9–11)}
+\begin{enumerate}[resume, leftmargin=*]
+    \item LLM Systems: Serving \& Scaling  
+    \item LLM Systems: Compound \& Multi-Agent Architectures  
+    \item Hardware \& Sustainability in ML Systems  
+\end{enumerate}
+
+\subsection*{Part IV: Trustworthy MLSys (Weeks 12–13)}
+\begin{enumerate}[resume, leftmargin=*]
+    \item Privacy, Safety, \& Security in ML Systems  
+    \item Reproducibility \& Benchmarking in MLSys  
+\end{enumerate}
+
+\subsection*{Part V: Capstone (Weeks 14–15)}
+\begin{enumerate}[resume, leftmargin=*]
+    \item What Makes an Impactful MLSys Paper  
+    \item Capstone Project Presentations  
+\end{enumerate}
+
+\section*{Assignments}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Paper Reading \& Critique} (weekly short writeups)  
+    \item \textbf{Replication \& Lab Assignments:}  
+    \begin{itemize}
+        \item InferLine latency vs. cost trade-offs  
+        \item vLLM serving efficiency  
+        \item RAG pipeline evaluation (accuracy vs. latency)  
+        \item Energy profiling of inference  
+        \item Privacy \& adversarial robustness experiment  
+    \end{itemize}
+    \item \textbf{Capstone Project:}  
+    \begin{itemize}
+        \item Milestone 1: Problem Motivation  
+        \item Milestone 2: System Design + Initial Experiments  
+        \item Final Report (8–10 pages)  
+        \item Final Presentation  
+    \end{itemize}
+\end{itemize}
+
+\section*{Participation}
+Active participation in paper discussions and peer feedback is expected. Students should come prepared to ask questions, challenge ideas, and contribute insights from both research and industry.
+
+\section*{Academic Integrity}
+All students must adhere to the University of South Carolina’s academic integrity policies. Collaboration is encouraged for discussions, but submitted work must reflect individual understanding unless explicitly team-based.
+
+\end{document}

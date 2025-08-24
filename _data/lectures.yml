@@ -1,10 +1,10 @@
-- title: "Lecture 1: Reconciling Accuracy, Cost, and Latency of Inference Serving Systems"
-  filename: InfAdapter-IPA-Sponge-complete
-  dirname: lectures
-  tldr: "This lecture reviews three related works out of AISys lab to set the context for the course and will be served as an example of MLSys research."
+# - title: "Lecture 1: Reconciling Accuracy, Cost, and Latency of Inference Serving Systems"
+#   filename: InfAdapter-IPA-Sponge-complete
+#   dirname: lectures
+#   tldr: "This lecture reviews three related works out of AISys lab to set the context for the course and will be served as an example of MLSys research."
 
-- title: "Lecture 2: Machine Learning Systems: Course Overview"
-  filename: csce585_2024_01_slides_mlsys_course_overview
+- title: "Lecture 1: Machine Learning Systems: Course Overview"
+  filename: csce585_2025_01_slides_mlsys_course_overview
   dirname: lectures
   tldr: "This lecture reviews a brief overview of the course, its requirements, learning goals, policies, and expectations."
 
