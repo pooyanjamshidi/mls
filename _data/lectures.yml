@@ -8,6 +8,11 @@
   dirname: lectures
   tldr: "This lecture reviews a brief overview of the course, its requirements, learning goals, policies, and expectations."
 
+- title: "Lecture 2: Machine Learning Systems in Production"
+  filename: csce585_2025_02_slides_ml_in_production
+  dirname: lectures
+  tldr: "This lecture contrasts challenges in building and deploying real-world ML systems in production vs in research. We also discuss the evolution of ML Systems from deep learning (Software 2.0) to LLMs (Software 3.0)."
+
 - title: "Lecture 3: How to Read an MLSys Paper?"
   filename: csce585_2024_03_slides_mlsys_how-to-read-mlsys-papers
   dirname: lectures
@@ -17,11 +22,6 @@
   filename: csce585_2024_04_slides_mlsys_design-experiments-motivation
   dirname: lectures
   tldr: "This lecture offers students both theoretical understanding and practical guidance by using InferLine as a concrete example, while giving them a clear roadmap for how to motivate their own projects experimentally."
-
-- title: "Lecture 5: Machine Learning Systems in Production"
-  filename: csce585_2024_05_slides_ml_in_production
-  dirname: lectures
-  tldr: "So far, we have explored two specific ML Systems work in research (InferLine and IPA)! This lecture contrasts challenges in building and deploying real-world ML systems in production vs in research."
 
 - title: "Lecture 6: Designing Machine Learning Systems"
   filename: csce585_2024_06_slides_designing_ml_systems
