@@ -13,6 +13,11 @@
   dirname: lectures
   tldr: "This lecture contrasts challenges in building and deploying real-world ML systems in production vs in research. We also discuss the evolution of ML Systems from deep learning (Software 2.0) to LLMs (Software 3.0)."
 
+- title: "Lecture 3: Designing Agentic AI Systems"
+  filename: csce585_2025_03_slides_designing_llm_systems
+  dirname: lectures
+  tldr: "In this lecture, we discuss a systematic approach for understanding, both high-level ideas and technical details in MLSys papers."
+
 - title: "Lecture 3: How to Read an MLSys Paper?"
   filename: csce585_2024_03_slides_mlsys_how-to-read-mlsys-papers
   dirname: lectures
