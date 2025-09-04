@@ -8,7 +8,7 @@ Hello, I hope you are as excited as I am about CSCE 585: ML Systems course!
 
 ## Course Syllabus
 
-First, please read the [Course Syllabus](https://pooyanjamshidi.github.io/mls/syllabus/CSCE585_Syllabus_Fall2025) very carefully.
+First, please read the [Course Syllabus](https://pooyanjamshidi.github.io/mls/syllabus/CSCE585_Syllabus_Fall2025.pdf) very carefully.
 
 ## Prerequisites
 
