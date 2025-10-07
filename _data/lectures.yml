@@ -23,6 +23,11 @@
   dirname: lectures
   tldr: "In this lecture, we discuss a case study of building an Agentic AI system using LLMs."
 
+- title: "Lecture 5: LLM Inference (LLMOps)"
+  filename: csce585_2025_05_slides_llm_inference
+  dirname: lectures
+  tldr: "In this lecture, we discuss the operational aspects of LLM inference, including optimization and deployment strategies."
+
 - title: "Lecture 3: How to Read an MLSys Paper?"
   filename: csce585_2024_03_slides_mlsys_how-to-read-mlsys-papers
   dirname: lectures
