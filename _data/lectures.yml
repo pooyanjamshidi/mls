@@ -28,6 +28,11 @@
   dirname: lectures
   tldr: "In this lecture, we discuss the operational aspects of LLM inference, including optimization and deployment strategies."
 
+- title: "Lecture 6: Lecture 6: Monitoring, Debugging, and Optimizing the Performance of ML and LLM Pipelines"
+  filename: csce585_2025_06_slides_perf_mlsys
+  dirname: lectures
+  tldr: "In this lecture, we discuss techniques for monitoring, debugging, and optimizing the performance of ML and LLM pipelines."
+
 - title: "Lecture 3: How to Read an MLSys Paper?"
   filename: csce585_2024_03_slides_mlsys_how-to-read-mlsys-papers
   dirname: lectures
