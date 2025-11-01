@@ -28,10 +28,25 @@
   dirname: lectures
   tldr: "In this lecture, we discuss the operational aspects of LLM inference, including optimization and deployment strategies."
 
-- title: "Lecture 6: Lecture 6: Monitoring, Debugging, and Optimizing the Performance of ML and LLM Pipelines"
+- title: "Lecture 6: Monitoring, Debugging, and Optimizing the Performance of ML and LLM Pipelines"
   filename: csce585_2025_06_slides_perf_mlsys
   dirname: lectures
   tldr: "In this lecture, we discuss techniques for monitoring, debugging, and optimizing the performance of ML and LLM pipelines."
+
+- title: "Lecture 7: Perceptrons and Logistic Regression"
+  filename: csce585_2025_07_slides_perceptrons_logisticregression
+  dirname: lectures
+  tldr: "This lecture is about simple models and algorithms for supervised learning of binary and multi-class classifiers"
+
+- title: "Lecture 8: Optimization and Neural Networks"
+  filename: csce585_2025_08_slides_optimization_nn
+  dirname: lectures
+  tldr: "This lecture is about optimization techniques to train models and build deep neural networks from multi-class logistic regression models."
+
+- title: "Lecture 9: Backpropagation and Automatic Differentiation"
+  filename: csce585_2025_09_slides_backpropagation_automatic_differentiation
+  dirname: lectures
+  tldr: "This lecture reviews backprop and automatic differentiation."
 
 - title: "Lecture 3: How to Read an MLSys Paper?"
   filename: csce585_2024_03_slides_mlsys_how-to-read-mlsys-papers
