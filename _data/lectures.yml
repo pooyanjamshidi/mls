@@ -48,6 +48,16 @@
   dirname: lectures
   tldr: "This lecture reviews backprop and automatic differentiation."
 
+- title: "Lecture 10: Machine Learning System Stack"
+  filename: csce585_2025_10_slides_deep_learning_system_stack
+  dirname: lectures
+  tldr: "This lecture reviews the full-stack machine learning system development."
+
+- title: "Lecture 11: Hardware for Machine Learning Systems"
+  filename: csce585_2025_11_slides_ml_hardware
+  dirname: lectures
+  tldr: "In this lecture, we look at the interface between software and hardware, and opportunities for optimization at the interface using ideas such as co-design."
+
 - title: "Lecture 3: How to Read an MLSys Paper?"
   filename: csce585_2024_03_slides_mlsys_how-to-read-mlsys-papers
   dirname: lectures
@@ -87,6 +97,10 @@
   dirname: lectures
   tldr: "This final lecture discusses how to build the next impactful ML Systems, drawing inspiration from current course materials."
 
+# distributed ML
+# adversasrial ML
+# fairness/bias in ML
+# ML privacy/security
   
 # - title: "Lecture 3: Machine Learning Systems: Trustworthy AI"
 #   filename: csce585_2022_03_slides_trustworthy_ai
