@@ -1,8 +1,3 @@
-# - title: "Lecture 1: Reconciling Accuracy, Cost, and Latency of Inference Serving Systems"
-#   filename: InfAdapter-IPA-Sponge-complete
-#   dirname: lectures
-#   tldr: "This lecture reviews three related works out of AISys lab to set the context for the course and will be served as an example of MLSys research."
-
 - title: "Lecture 1: Machine Learning Systems: Course Overview"
   filename: csce585_2025_01_slides_mlsys_course_overview
   dirname: lectures
@@ -58,50 +53,52 @@
   dirname: lectures
   tldr: "In this lecture, we look at the interface between software and hardware, and opportunities for optimization at the interface using ideas such as co-design."
 
-- title: "Lecture 3: How to Read an MLSys Paper?"
+- title: "Lecture 12: Security of ML Systems (Adversarial ML)"
+  filename: csce585_2025_12_slides_adversarial_ml
+  dirname: lectures
+  tldr: "This lecture discusses security challenges in ML systems, focusing on adversarial machine learning techniques and defenses."
+
+- title: "Lecture 13: Scalable & Distributed Machine Learning"
+  filename: csce585_2025_13_slides_scalable_distributed_ML
+  dirname: lectures
+  tldr: "This lecture introduces variations of gradient descent and ideas how to it scale up using parallel computing."
+
+- title: "Lecture 14: Trustworthy AI and Fairness in ML Systems"
+  filename: csce585_2025_14_slides_trustworthy_ai_fairness
+  dirname: lectures
+  tldr: "This lecture discusses important aspects of AI trustworthiness, including fairness, transparency, accountability, and robustness."
+
+- title: "Lecture 15: Building the Next Impactful ML System: Lessons, Strategies, and Inspirations from CSCE 585"
+  filename: csce585_2025_15_slides_mlsys_impactful_ml_system
+  dirname: lectures
+  tldr: "This final lecture discusses how to build the next impactful ML Systems, drawing inspiration from current course materials."
+
+- title: "Bonus Lecture 1: How to Read an MLSys Paper?"
   filename: csce585_2024_03_slides_mlsys_how-to-read-mlsys-papers
   dirname: lectures
   tldr: "In this lecture, we discuss a systematic approach for understanding, both high-level ideas and technical details in MLSys papers."
 
-- title: "Lecture 4: Designing and Motivating (ML) Systems Experiments"
+- title: "Bonus Lecture 2: Designing and Motivating (ML) Systems Experiments"
   filename: csce585_2024_04_slides_mlsys_design-experiments-motivation
   dirname: lectures
   tldr: "This lecture offers students both theoretical understanding and practical guidance by using InferLine as a concrete example, while giving them a clear roadmap for how to motivate their own projects experimentally."
 
-- title: "Lecture 6: Designing Machine Learning Systems"
-  filename: csce585_2024_06_slides_designing_ml_systems
-  dirname: lectures
-  tldr: "This lecture discusses designing and building process of ML Systems."
-
-- title: "Lecture 7: Understanding and Explaining the Root Causes of (Performance) Faults in (ML) Systems with Causal AI"
-  filename: csce585_2024_07_slides_causal_ai_ml_systems
-  dirname: lectures
-  tldr: "This lecture discusses several research directions (multi-objective optimization, transfer learning, causal inference) in ML Systems."
-
-- title: "Lecture 8: Replicating Results in Machine Learning Systems Research"
+- title: "Bonus Lecture 3: Replicating Results in Machine Learning Systems Research"
   filename: csce585_2024_08_slides_mlsys_how-to-replicate-mlsys-papers
   dirname: lectures
   tldr: "This lecture discusses the importance of replication in machine learning systems research and how you can integrate it into your projects."
-
-- title: "Guest Lecture: Performance Modeling, Debugging, and Optimization of Highly Configurable Robotic Systems with Causal AI"
-  filename: csce585_2024_slides_hossexn_robotics_causality
-  tldr: "In this guest lecture, Abir Hossen (PhD student at AISys lab) talks about his research on finding root causes of failures in robotic systems using causal reasoning."
-
-- title: "Guest Lecture: The Effects of Interventions and Causal Bayesian Optimization"
-  filename: csce585_2024_slides_javidian_causal_bo
-  dirname: lectures
-  tldr: "In this guest lecture, Mohammad Ali Javidian (Appalachian State University) talks about his recent work on Causal BO."
-
-- title: "Lecture 10: Building the Next Impactful ML System: Lessons, Strategies, and Inspirations from CSCE 585"
-  filename: csce585_2024_10_slides_mlsys_impactful_ml_system
-  dirname: lectures
-  tldr: "This final lecture discusses how to build the next impactful ML Systems, drawing inspiration from current course materials."
 
 # distributed ML
 # adversasrial ML
 # fairness/bias in ML
 # ML privacy/security
   
+# - title: "Lecture 1: Reconciling Accuracy, Cost, and Latency of Inference Serving Systems"
+#   filename: InfAdapter-IPA-Sponge-complete
+#   dirname: lectures
+#   tldr: "This lecture reviews three related works out of AISys lab to set the context for the course and will be served as an example of MLSys research."
+
+
 # - title: "Lecture 3: Machine Learning Systems: Trustworthy AI"
 #   filename: csce585_2022_03_slides_trustworthy_ai
 #   dirname: lectures
