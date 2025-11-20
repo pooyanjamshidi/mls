@@ -88,6 +88,11 @@
   dirname: lectures
   tldr: "This lecture discusses the importance of replication in machine learning systems research and how you can integrate it into your projects."
 
+- title: "Bonus Lecture 4: Reconciling Accuracy, Cost, and Latency of Inference Serving Systems"
+  filename: reconciling-infadapter-ipa-sponge
+  dirname: lectures
+  tldr: "This lecture reviews three related works out of AISys lab to set the context for the course and will be served as an example of MLSys research."
+
 # distributed ML
 # adversasrial ML
 # fairness/bias in ML
