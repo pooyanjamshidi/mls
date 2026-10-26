@@ -88,8 +88,23 @@
   dirname: lectures
   tldr: "This lecture discusses the importance of replication in machine learning systems research and how you can integrate it into your projects."
 
-- title: "Bonus Lecture 4: Reconciling Accuracy, Cost, and Latency of Inference Serving Systems"
-  filename: reconciling-infadapter-ipa-sponge
+- title: "Guest Lecture (Senthilkumar Gopal, NVIDIA, 2026): Building Distributed Inference at Scale: Lessons, Challenges and Opportunities"
+  filename: csce585_2026_slides_nvidia_dynamo
+  dirname: lectures
+  tldr: "In this guest lecture, Senthilkumar Gopal presents the design and implementation of Dynamo, a distributed inference serving system at NVIDIA, and share lessons learned from building it at scale."
+
+- title: "Guest Lecture (Ivan Ruchkin, University of Florida, 2026): Confidence over Time: Confidence Calibration with Temporal Logic for Large Language Model Reasoning"
+  filename: csce585_2026_slides_ivan_cot
+  dirname: lectures
+  tldr: "In this guest lecture, Ivan Ruchkin presents his research on confidence calibration with temporal logic for large language model reasoning."
+
+- title: "Guest Lecture: Performance Modeling, Debugging, and Optimization of Highly Configurable Robotic Systems with Causal AI"
+  filename: csce585_2024_slides_hossexn_robotics_causality
+  dirname: lectures
+  tldr: "In this guest lecture, Abir Hossen (PhD student at AISys lab) talks about his research on finding root causes of failures in robotic systems using causal reasoning."
+
+- title: "Guest Lecture: The Effects of Interventions and Causal Bayesian Optimization"
+  filename: csce585_2024_slides_javidian_causal_bo
   dirname: lectures
   tldr: "This lecture reviews three related works out of AISys lab to set the context for the course and will be served as an example of MLSys research."
 
